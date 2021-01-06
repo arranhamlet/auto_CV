@@ -66,7 +66,7 @@ tribble(
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment",
-  "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded.",
+  "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded. Aspects of data visualisation acknowledged in https://worldhealthorg.shinyapps.io/covid/.",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Continued to provide adhoc support till Dec 2020.",
   "Epidemiologist: Yellow fever", "World Health Organization", "Geneva, Switzerland", "Jul 2016 - Sep 2016", "Commissioned to produce a report evaluating the risk of outbreaks of yellow fever across Africa as a result of ongoing transmission in Angola and the Democratic Republic of the Congo and the potential for introduction into Asia.",
   "Epidemiologist", "Ozygen Systems", "London, United Kingdom", "Feb 2016 - Mar 2016", "Hired to produce a report on numerous pathogens involved in nosocomial infection and to evaluate the applicability of ozone decontamination technology in UK healthcare settings to limit their spread."
