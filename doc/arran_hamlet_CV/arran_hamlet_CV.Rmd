@@ -23,9 +23,10 @@ library(tidyverse)
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "2017-2020", "PhD thesis titled “Yellow fever in South America: The role of environment and host on transmission dynamics”.",
+  "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "2017-2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
   "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "2017-2020", "Project focused on understanding the epidemiology of yellow fever across South America, and in focus in Brazil, using climate, environment and host using a variety of statistical and mechanistic modelling techniques.",
   "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "2017-2020", "Awarded 3 Medical Research Council Exceptional Training Opportunity awards (total £) to present results as well as teach and run workshops in Brazil and Colombia to Ministries of Health and Universities.",
+  "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "2017-2020", "Supervised by Dr Tini Garske and Professor Neil Ferguson.",
   
   "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "2014-2015", "Studied a broad collection of topics before specialising in infectious disease epidemiology.",
   "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "2014-2015", "Awarded a distinction for my dissertation project titled 'The Seasonality of Yellow Fever in Africa.'",
@@ -38,19 +39,53 @@ tribble(
 
 
 # Employment
-
-```{r}
+```{r employment}
 tribble(
-  ~Year, ~Type, ~Desc,
-  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
-  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Postdoctural Researcher", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models. ",
+  "Postdoctural Researcher", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.",
+ "Postdoctural Researcher", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Lead researcher on a piece of work commissioned by Abbott and the Presidents Malaria Initiative to assess the potential impact of Anopheles stephensi establishment on malaria transmission in the Horn of Africa.",
+  
+   "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
+ 
+   "Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Outbreak analysis and response for the 2015-2016 outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO).",
+  "Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Responsible for estimating population-level vaccination coverage across Africa and the development of an open-source tool to explore this information. Currently utilised by researchers and the WHO."
+  
 ) %>% 
-  brief_entries(
-    glue::glue("Nobel Prize in {Type}"),
-    Year, 
-    Desc
-  )
+  detailed_entries(role, dates, company, loc, details)
 ```
+
+# Consultancy
+```{r consultancy}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment",
+  "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded.",
+  "Epidemiologist: Yellow fever", "World Health Organization", "Geneva, Switzerland", "Jul 2016 - Sep 2016", "Commissioned to produce a report evaluating the risk of outbreaks of yellow fever across Africa as a result of ongoing transmission in Angola and the Democratic Republic of the Congo and the potential for introduction into Asia.",
+  "Epidemiologist", "Ozygen Systems", "London, United Kingdom", "Feb 2016 - Mar 2016", "Hired to produce a report on numerous pathogens involved in nosocomial infection and to evaluate the applicability of ozone decontamination technology in UK healthcare settings to limit their spread."
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Teaching
+```{r teaching}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "MSc dissertation supervisor", "Imperial College London", "London, United Kingdom", "May 2020 - Oct 2020", "Designed and supervised MSc Epidemiology projects looking at the effect of forest fragmentation on yellow fever in Southern Brazil, and exploring the differences in transmission dynamics between yellow fever, dengue and zika.",
+
+  "Graduate teaching assistant", "Imperial College London", "London, United Kingdom", "Jan 2017 - ", "Teaching assistant and demonstrator for numerous modules on infectious disease modelling, statistical analysis and epidemiology.",
+
+  "Shortcourse demonstrator", "Imperial College London", "London, United Kingdom", "September 2017/September 2018/September 2019", "Demonstrator on the departments 'Mathematical modelling for the control of infectious diseases' short course, run since 1990 and designed to teach pubic health professionals about infectious disease modelling.",
+  
+  "Shortcourse demonstrator", "Imperial College London", "Bogota, Colombia", "June 2020", "Demonstrator and lecturer on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling.",
+  
+  "Design and implementation of an online platform for teaching infectious disease modelling", "Imperial College London", "London, United Kingdom", "Jan 2019 - Sept 2019", "Responsible for liasing between programming team and course organisers to design and translate existing practicals from Berkely Madonna to an online web interface running the Odin language.",
+"Design and implementation of an online platform for teaching infectious disease modelling", "Imperial College London", "London, United Kingdom", "Jan 2019 - Sept 2019", "Highly successful implementation with the platform now being used for both future shortcourses and the MSc Epidemiology at Imperial College London."
+  
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
 
 # Publications
 
