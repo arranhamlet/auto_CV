@@ -51,7 +51,7 @@ tribble(
   "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.",
   "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/",
  
- "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Provided technical support and input for numerous reports and projects with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
+ "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
  "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
   
    "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
@@ -108,9 +108,9 @@ tribble(
   "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Postponed due to the COVID-19 pandemic.",
   
   
-  "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "October 2017: Awarded £650 to travel to the WHO in Geneva, Switzerland to present my work on yellow fever and discuss with the yellow fever team how my PhD can provide support for their activities.",
-  "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "August 2018: Awarded £2220 to travel to Rio de Janiro and Brasilia, Brazil, and present my results on modelling yellow fever in South America at a meeting co-hosted by the Brazilian Ministry of Health and the Pan American Health Organization, as well as to set up a research collaboration with Fiocruz.",
-  "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "June 2019: Awarded £1719 to travel to Bogota, Colombia to lecture and demonstrate on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling."
+  "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "Oct 2017: Awarded £650 to travel to the WHO in Geneva, Switzerland to present my work on yellow fever and discuss with the yellow fever team how my PhD can provide support for their activities.",
+  "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "Aug 2018: Awarded £2220 to travel to Rio de Janiro and Brasilia, Brazil, and present my results on modelling yellow fever in South America at a meeting co-hosted by the Brazilian Ministry of Health and the Pan American Health Organization, as well as to set up a research collaboration with Fiocruz.",
+  "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "Jun 2019: Awarded £1719 to travel to Bogota, Colombia to lecture and demonstrate on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling."
 
 ) %>% 
   detailed_entries(company, loc, role, dates, details)
@@ -123,13 +123,11 @@ tribble(
   
     "The potential public health consequences of COVID-19 on malaria in Africa", "London Malaria Network", "London, United Kingdom", "Oct 2020",
   
-  "Land-use,  vegetation  and  habitat fragmentation  as  drivers  of  yellow  fever  transmission  in  South America", "International Conference on One Medicine One Science", "Chang Mai, Thailand", "Feb 2020",
+    "Seasonality of agricultural exposure more important than seasonality of climate for predicting yellow fever transmission in Brazil", "American Society of Tropical Medicine and Hygiene", "National Harbor, United States of America", "Nov 2019",
   
-  "Seasonality of agricultural exposure more important than seasonality of climate for predicting yellow fever transmission in Brazil", "American Society of Tropical Medicine and Hygiene", "National Harbor, United States of America", "Nov 2020",
-  
-  "Statistical and mathematical modelling of yellow fever in South America", "Outbreak Analysis and Modelling for Public Health", "Bogota, Colombia", "June 2020",
-  
-  "Seasonality of yellow fever in Africa and Brazil", "Seasonality of climate in Arboviruses workshop", "London, United Kingdom", "Feb 2020",
+    "Statistical and mathematical modelling of yellow fever in South America", "Outbreak Analysis and Modelling for Public Health", "Bogota, Colombia", "Jun 2019",
+
+  "Land-use,  vegetation  and  habitat fragmentation  as  drivers  of  yellow  fever  transmission  in  South America", "International Conference on One Medicine One Science", "Chang Mai, Thailand", "Feb 2019",
   
   "Yellow fever in Brazil - Modelling as a tool to inform outbreak response and public health policy", "Yellow fever forecasting: Embedding   modelling in lessons learnt exercises", "Brasilia, Brazil", "Nov 2018"
   
