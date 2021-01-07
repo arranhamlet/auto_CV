@@ -3,7 +3,7 @@ name: Dr Arran Hamlet
 date: "`r format(Sys.time(), '%B, %Y')`"
 position: Postdoctural Researcher
 address: "Global Infectious Disease Analysis, School of Public Health, Imperial College London"
-phone: +44 7923340228
+aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy."
 email: arran.hamlet14@imperial.ac.uk
 github: arranhamlet
 linkedin: arranhamlet
@@ -31,7 +31,7 @@ tribble(
   "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "2014-2015", "Studied a broad collection of topics before specialising in infectious disease epidemiology.",
   "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "2014-2015", "Awarded a distinction for my dissertation project titled 'The Seasonality of Yellow Fever in Africa.'",
   
-    "BSc in Biology with Psychology", "Queen Mary University of London", "London, United Kingdom", "2011-2014", "Graduated with Upper Second-class Honours (2.1)”."
+    "BSc in Biology with Psychology", "Queen Mary University of London", "London, United Kingdom", "2011-2014", "Graduated with Upper Second-class Honours (2.1)."
   
 ) %>% 
   detailed_entries(uni, loc, degree, dates, details)
@@ -81,7 +81,7 @@ tribble(
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   
-  "PhD Examiner", "University of São Paulo", "São Paulo, Brazil", "Oct 2020-", "Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'.",
+  "PhD Assessor", "University of São Paulo", "São Paulo, Brazil", "Oct 2020-", "Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'.",
   
   "MSc Dissertation Supervisor", "Imperial College London", "London, United Kingdom", "May 2020 - Oct 2020", "Designed and supervised MSc Epidemiology projects looking at the effect of forest fragmentation on yellow fever in Southern Brazil, and exploring the differences in transmission dynamics between yellow fever, dengue and zika.",
 
@@ -97,7 +97,7 @@ tribble(
 ) %>% 
   detailed_entries(company, loc, role, dates, details)
 ```
-
+\newpage
 # Funding awards
 ```{r awards}
 tribble(
