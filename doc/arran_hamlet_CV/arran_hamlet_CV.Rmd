@@ -49,7 +49,7 @@ tribble(
  "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Lead researcher for Imperial College London's data analytics and modelling support for Nigeria.",
  "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Conducted analysis to answer specific questions in order to provide evidence for decisions to be made by the Nigerian Presidential Task Force.",
   "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.",
-  "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/",
+  "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/.",
  
  "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
  "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
@@ -81,7 +81,7 @@ tribble(
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   
-  "PhD Examiner", "University of São Paulo", "São Paulo, Brazil", "Oct 2020-", "Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'",
+  "PhD Examiner", "University of São Paulo", "São Paulo, Brazil", "Oct 2020-", "Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'.",
   
   "MSc Dissertation Supervisor", "Imperial College London", "London, United Kingdom", "May 2020 - Oct 2020", "Designed and supervised MSc Epidemiology projects looking at the effect of forest fragmentation on yellow fever in Southern Brazil, and exploring the differences in transmission dynamics between yellow fever, dengue and zika.",
 
