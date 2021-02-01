@@ -3,7 +3,7 @@ name: Dr Arran Hamlet
 date: "`r format(Sys.time(), '%B, %Y')`"
 position: Postdoctural Researcher
 address: "Global Infectious Disease Analysis, School of Public Health, Imperial College London"
-aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy."
+aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy. Strong interest in work within LMIC settings and the programming of interactive tools for data analysis and decision making."
 email: arran.hamlet14@imperial.ac.uk
 github: arranhamlet
 linkedin: arranhamlet

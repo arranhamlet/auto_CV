@@ -1,3 +1,0 @@
-library(vitae)
-library(tinytex)
-
