@@ -1,7 +1,7 @@
 ---
 name: Dr Arran Hamlet
 date: "`r format(Sys.time(), '%B, %Y')`"
-position: Postdoctural Researcher
+position: Postdoctoral Researcher
 address: "Global Infectious Disease Analysis, School of Public Health, Imperial College London"
 aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy. Strong interest in work within LMIC settings and the programming of interactive tools for data analysis and decision making."
 email: arran.hamlet14@imperial.ac.uk
@@ -19,7 +19,7 @@ library(vitae)
 library(tidyverse)
 ```
 
-# Education
+# Qualifications
 
 ```{r education}
 tribble(
@@ -42,17 +42,17 @@ tribble(
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Postdoctural Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models. ",
-  "Postdoctural Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.",
- "Postdoctural Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Lead researcher on a piece of work commissioned by Abbott and the Presidents Malaria Initiative to assess the potential impact of Anopheles stephensi establishment on malaria transmission in the Horn of Africa.",
+  "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models. ",
+  "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.",
+ "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Lead researcher on a piece of work commissioned by Abbott and the Presidents Malaria Initiative to assess the potential impact of Anopheles stephensi establishment on malaria transmission in the Horn of Africa.",
  
- "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Lead researcher for Imperial College London's data analytics and modelling support for Nigeria.",
- "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Conducted analysis to answer specific questions in order to provide evidence for decisions to be made by the Nigerian Presidential Task Force.",
-  "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.",
-  "Postdoctural Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/.",
+ "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Lead researcher for Imperial College London's data analytics and modelling support for Nigeria.",
+ "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Conducted analysis to answer specific questions in order to provide evidence for decisions to be made by the Nigerian Presidential Task Force.",
+  "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.",
+  "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/.",
  
- "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
- "Postdoctural Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
+ "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
+ "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
   
    "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
  
