@@ -17,6 +17,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
+library(scholar)
 ```
 
 # Qualifications
@@ -24,14 +25,14 @@ library(tidyverse)
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "2017-2020", "Project focused on understanding the epidemiology of yellow fever across South America, with a focus on Brazil, examining the roles of climate, environment and host, using a variety of statistical and mechanistic modelling techniques.",
-  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "2017-2020", "Awarded 3 Medical Research Council (MRC) Exceptional Training Opportunity awards (total £4,589) and a MRC pump priming award (£23,000) to present results as well as teach, design and run workshops in Brazil and Colombia for Ministries of Health and Universities.",
-  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "2017-2020", "Supervised by Dr Tini Garske and Professor Neil Ferguson, fully funded by the UK Medical Research Council.",
+  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "Jan 2017-Jan 2020", "Project focused on understanding the epidemiology of yellow fever across South America, with a focus on Brazil, examining the roles of climate, environment and host, using a variety of statistical and mechanistic modelling techniques.",
+  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "Jan 2017-Jan 2020", "Awarded 3 Medical Research Council (MRC) Exceptional Training Opportunity awards (total £4,589) and a MRC pump priming award (£23,000) to present results as well as teach, design and run workshops in Brazil and Colombia for Ministries of Health and Universities.",
+  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "Jan 2017-Jan 2020", "Supervised by Dr Tini Garske and Professor Neil Ferguson, fully funded by the UK Medical Research Council.",
   
-  "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "2014-2015", "Studied a broad collection of topics before specialising in infectious disease epidemiology.",
-  "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "2014-2015", "Awarded a distinction for my dissertation project titled 'The Seasonality of Yellow Fever in Africa.'",
+  "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "Oct 2014-Oct 2015", "Studied a broad collection of topics before specialising in infectious disease epidemiology.",
+  "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "Oct 2014-Oct 2015", "Awarded a distinction for my dissertation project titled 'The Seasonality of Yellow Fever in Africa.'",
   
-    "BSc in Biology with Psychology", "Queen Mary University of London", "London, United Kingdom", "2011-2014", "Graduated with Upper Second-class Honours (2.1)."
+    "BSc in Biology with Psychology", "Queen Mary University of London", "London, United Kingdom", "Sep 2011-May 2014", "Graduated with Upper Second-class Honours (2.1)."
   
 ) %>% 
   detailed_entries(uni, loc, degree, dates, details)
@@ -44,15 +45,15 @@ tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models. ",
   "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.",
- "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Lead researcher on a piece of work commissioned by Abbott and the Presidents Malaria Initiative to assess the potential impact of Anopheles stephensi establishment on malaria transmission in the Horn of Africa.",
+ "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-", "Lead researcher on a piece of work assessing the potential impact of Anopheles stephensi establishment on malaria transmission in Ethiopia.",
  
- "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Lead researcher for Imperial College London's data analytics and modelling support for Nigeria.",
- "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Conducted analysis to answer specific questions in order to provide evidence for decisions to be made by the Nigerian Presidential Task Force.",
-  "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.",
-  "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/.",
+ "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-Dec 2020", "Lead researcher for Imperial College London's data analytics and modelling support for Nigeria.",
+ "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-Dec 2020", "Conducted analysis to answer specific questions in order to provide evidence for decisions to be made by the Nigerian Presidential Task Force.",
+  "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-Dec 2020", "Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.",
+  "Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-Dec 2020", "A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/.",
  
- "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
- "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
+ "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-Dec 2020", "Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.",
+ "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-Dec 2020", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
   
    "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
  
@@ -67,6 +68,7 @@ tribble(
 ```{r consultancy}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Content creator/teaching assistant", "AppliedEpi", "Online", "Jan 2022 - ", "Responsible for creating learning materials for self directed and taught courses designed to teach Epidemiologists how to code in R",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded. Aspects of data visualisation acknowledged in https://worldhealthorg.shinyapps.io/covid/.",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Continued to provide adhoc support till Dec 2020.",
@@ -80,16 +82,18 @@ tribble(
 ```{r teaching}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  
+  "Shortcourse co-organiser", "Imperial College London", "London, United Kingdom", "Jan 2021 - Sep 2021", "Co-organiser on the departments 'Mathematical modelling for the control of infectious diseases' short course, run since 1990 and designed to teach pubic health professionals about infectious disease modelling.",
+    "Shortcourse co-organiser", "Imperial College London", "London, United Kingdom", "Jan 2021 - Sep 2021", "Responsible for helping redesign, and restructure, the course in order to deliver it fully online in light of the ongoing COVID-19 pandemic.",
+
   "PhD Assessor", "University of São Paulo", "São Paulo, Brazil", "Oct 2020-", "Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'.",
   
   "MSc Dissertation Supervisor", "Imperial College London", "London, United Kingdom", "May 2020 - Oct 2020", "Designed and supervised MSc Epidemiology projects looking at the effect of forest fragmentation on yellow fever in Southern Brazil, and exploring the differences in transmission dynamics between yellow fever, dengue and zika.",
 
-  "Graduate Teaching Assistant", "Imperial College London", "London, United Kingdom", "Jan 2017 - ", "Teaching assistant and demonstrator for numerous modules on infectious disease modelling, statistical analysis and epidemiology.",
+  "Graduate Teaching Assistant", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jun 2022", "Teaching assistant and demonstrator for numerous modules on infectious disease modelling, statistical analysis and epidemiology.",
 
-  "Shortcourse Demonstrator", "Imperial College London", "London, United Kingdom", "Sep 2017/Sep 2018/Sep 2019", "Demonstrator on the departments 'Mathematical modelling for the control of infectious diseases' short course, run since 1990 and designed to teach pubic health professionals about infectious disease modelling.",
+  "Shortcourse Demonstrator", "Imperial College London", "Bogota, Colombia", "Jun 2019", "Demonstrator and lecturer on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling.",
   
-  "Shortcourse Demonstrator", "Imperial College London", "Bogota, Colombia", "Jun 2020", "Demonstrator and lecturer on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling.",
+    "Shortcourse Demonstrator", "Imperial College London", "London, United Kingdom", "Sep 2017/Sep 2018/Sep 2019", "Demonstrator on numerous practical exercises and lectures on data analysis and infectious disease modelling on the aformentioned departments 'Mathematical modelling for the control of infectious diseases' short course.",
   
   "Design and implementation of an online platform for teaching infectious disease modelling", "Imperial College London", "London, United Kingdom", "Jan 2019 - Sept 2019", "Responsible for liasing between programming team and course organisers to design and translate existing practicals from Berkely Madonna to an online web interface running the Odin language.",
 "Design and implementation of an online platform for teaching infectious disease modelling", "Imperial College London", "London, United Kingdom", "Jan 2019 - Sept 2019", "Highly successful implementation with the platform now being used for both future shortcourses and the MSc Epidemiology at Imperial College London."
@@ -97,7 +101,7 @@ tribble(
 ) %>% 
   detailed_entries(company, loc, role, dates, details)
 ```
-\newpage
+
 # Funding awards
 ```{r awards}
 tribble(
@@ -105,7 +109,7 @@ tribble(
   
   "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Jointly awarded £23,000 with co-PI Natsuko Imai to run a week long training workshop in Rio de Janeiro focusing on the use of mathematical models in outbreak response and policy in July 2020.",
    "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Course was to be run collaboratively with the Brazilian Ministry of Health and Fundação Oswaldo Cruz (Fiocruz).",
-  "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Postponed due to the COVID-19 pandemic.",
+  "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Postponed due to the COVID-19 pandemic and rescheduled for August 2022.",
   
   
   "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "Oct 2017: Awarded £650 to travel to the WHO in Geneva, Switzerland to present my work on yellow fever and discuss with the yellow fever team how my PhD can provide support for their activities.",
@@ -127,7 +131,7 @@ tribble(
   
     "Statistical and mathematical modelling of yellow fever in South America", "Outbreak Analysis and Modelling for Public Health", "Bogota, Colombia", "Jun 2019",
 
-  "Land-use,  vegetation  and  habitat fragmentation  as  drivers  of  yellow  fever  transmission  in  South America", "International Conference on One Medicine One Science", "Chang Mai, Thailand", "Feb 2019",
+  "Land-use,  vegetation  and  habitat fragmentation  as  drivers  of  yellow  fever  transmission  in  South America", "International Conference on One Medicine One Science", "Chiang Mai, Thailand", "Feb 2019",
   
   "Yellow fever in Brazil - Modelling as a tool to inform outbreak response and public health policy", "Yellow fever forecasting: Embedding   modelling in lessons learnt exercises", "Brasilia, Brazil", "Nov 2018"
   
@@ -137,69 +141,97 @@ tribble(
 
 # Publications
 ## First author publications
-```{r publications_first}
-
-pubs <- scholar::get_publications("xk9BhHUAAAAJ") %>% 
-  dplyr::mutate(author = author %>% 
+```{r publications_load, echo = FALSE, message = FALSE, warning = FALSE, results = FALSE}
+pubs <- scholar::get_publications("xk9BhHUAAAAJ")%>%
+  dplyr::mutate(author = author %>%
                   as.character,
-                journal = journal %>% 
+                journal = journal %>%
                   replace(journal %in% "bioRxiv", "BioRxiv") %>%
-                  replace(journal %in% "medRxiv", "MedRxiv"), 
+                  replace(journal %in% "medRxiv", "MedRxiv"),
                 first_author = case_when(stringr::str_starts(author, "A Hamlet|ATP Hamlet") ~ TRUE,
                                          TRUE ~ FALSE),
                 preprint = case_when(journal %in% c("bioRxiv", "BioRxiv", "MedRxiv", "medRxiv", "") ~ TRUE,
                                          TRUE ~ FALSE),
                 report = case_when(stringr::str_starts(title, "Report") ~ TRUE,
-                                         TRUE ~ FALSE)) %>% 
+                                         TRUE ~ FALSE)) %>%
   dplyr::arrange(desc(year), desc(cites))
 
-pubs <- pubs[-which(pubs$cites == 0 & pubs$year < 2020), ]
-if(any(duplicated(pubs$title))) pubs <- pubs[-which(duplicated(pubs$title)), ]
+print(pubs)
 
-pubs %>% 
-  dplyr::filter(first_author == T & preprint == F) %>% 
+pubs <- pubs %>%
+  rowwise() %>%
+  mutate(
+    author = case_when(
+      str_ends(author, "\\.\\.\\.") ~ get_complete_authors(id = "xk9BhHUAAAAJ", pubid = pubid),
+      TRUE ~ author
+    )
+  )
+
+
+# pubs <- pubs[-which(pubs$cites == 0 & pubs$year < 2021), ]
+if(any(duplicated(pubs$title))) pubs <- pubs[-which(duplicated(pubs$title)), ]
+pubs <- pubs[!is.na(pubs$year), ]
+pubs$author <- gsub("A Hamlet|ATP Hamlet", "*A Hamlet*", pubs$author)
+
+
+```
+
+```{r publications_first}
+pubs %>%
+  dplyr::filter(first_author == T & preprint == F) %>%
   dplyr::arrange(desc(year), desc(cites)) %>%
   detailed_entries(
     what = title,
     when = as.character(year),
     with = author,
-    where = journal, 
+    where = journal,
     .protect = TRUE
   )
 ```
-## Selected additional publications
+## Additional publications
 ```{r publications_additional}
 name_in_first_couple <- pubs[which(pubs$first_author == F & grepl("Hamlet", pubs$author)), ]
 # name_in_first_couple <- name_in_first_couple[rev(order(name_in_first_couple$cites)), ]
 name_in_first_couple_papers <- name_in_first_couple[which(name_in_first_couple$report == F & name_in_first_couple$preprint == F), ]
 
-name_in_first_couple_papers %>% 
-  slice_head(n = 5) %>%
-  dplyr::arrange(desc(year), desc(cites)) %>%
-  detailed_entries(
-    what = title,
-    when = as.character(year),
-    with = author,
-    where = journal, 
-    .protect = TRUE
-  )
-```
-## Selected reports
-```{r publications_reports}
-pubs[which(pubs$report == T), ]$journal <- "MRC Centre for Global Infectious Disease Analysis"
+# name_in_first_couple_papers %>%
+#   # slice_head(n = 5) %>%
+#   dplyr::arrange(desc(year), desc(cites)) %>%
+#   detailed_entries(
+#     what = title,
+#     when = as.character(year),
+#     with = author,
+#     where = journal,
+#     .protect = TRUE
+#   )
 
-pubs %>% 
-  dplyr::filter(report == T) %>%
-      slice_head(n = 5) %>%
-  dplyr::arrange(desc(year), desc(cites)) %>%
-  detailed_entries(
-    what = title,
-    when = as.character(year),
-    with = author,
-    where = journal, 
-    .protect = TRUE
-  )
+pubs %>%
+    dplyr::filter(first_author == F & preprint == F & journal != "Imperial College London") %>%
+    dplyr::arrange(desc(year), desc(cites)) %>%
+    detailed_entries(
+        what = title,
+        when = as.character(year),
+        with = author,
+        where = journal,
+        .protect = TRUE
+    )
 ```
+<!-- ## Selected reports -->
+<!-- ```{r publications_reports} -->
+<!-- pubs[which(pubs$report == T), ]$journal <- "MRC Centre for Global Infectious Disease Analysis" -->
+
+<!-- pubs %>% -->
+<!--   dplyr::filter(report == T) %>% -->
+<!--       slice_head(n = 5) %>% -->
+<!--   dplyr::arrange(desc(year), desc(cites)) %>% -->
+<!--   detailed_entries( -->
+<!--     what = title, -->
+<!--     when = as.character(year), -->
+<!--     with = author, -->
+<!--     where = journal, -->
+<!--     .protect = TRUE -->
+<!--   ) -->
+<!-- ``` -->
 
 
 
