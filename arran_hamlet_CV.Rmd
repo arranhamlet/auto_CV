@@ -1,8 +1,8 @@
 ---
 name: Dr Arran Hamlet
 date: "`r format(Sys.time(), '%B, %Y')`"
-position: Postdoctoral Researcher
-address: "Global Infectious Disease Analysis, School of Public Health, Imperial College London"
+position: Epidemic Intelligence Service Officer
+address: "Centers for Disease Control and Prevention"
 aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy. Strong interest in work within LMIC settings and the programming of interactive tools for data analysis and decision making."
 email: arran_hamlet@hotmail.co.uk
 github: arranhamlet
@@ -43,7 +43,8 @@ tribble(
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Epidemic Intelligence Service Officer for the state of Washington.",
+  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Epidemic Intelligence Service Officer based at the Washington State Department of Health with a focus on communicable disease surveillance, outbreak response, and policy.",
+    "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Established the surveillance system for long COVID, evaluated the tuberculosis reporting system and responded to outbreaks within the state of Washington.",
   
   "Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Visiting researcher for mathematical and statistical modelling of malaria.",
   
@@ -72,7 +73,9 @@ tribble(
 ```{r consultancy}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Content creator/teaching assistant", "AppliedEpi", "Online", "Jan 2022 - ", "Responsible for creating learning materials for self directed and taught courses designed to teach Epidemiologists how to code in R",
+  "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Responsible for creating learning materials for self directed and taught courses designed to teach Epidemiologists how to code in R..",
+    "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Lead and assisted on taught courses teaching applied epidemiology to various Health Departments (Wales, Kazakhstan, Cambodia, Canada).",
+      "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Designed the Advanced Statistics in R course.",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded. Aspects of data visualisation acknowledged in https://worldhealthorg.shinyapps.io/covid/.",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Continued to provide adhoc support till Dec 2020.",
