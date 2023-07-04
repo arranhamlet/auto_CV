@@ -199,7 +199,7 @@ pubs %>%
     .protect = TRUE
   )
 ```
-## Additional publications
+## Number of additional publications
 ```{r publications_additional}
 name_in_first_couple <- pubs[which(pubs$first_author == F & grepl("Hamlet", pubs$author)), ]
 # name_in_first_couple <- name_in_first_couple[rev(order(name_in_first_couple$cites)), ]
@@ -225,7 +225,8 @@ pubs %>%
         with = author,
         where = journal,
         .protect = TRUE
-    )
+    ) %>%
+  nrow()
 ```
 <!-- ## Selected reports -->
 <!-- ```{r publications_reports} -->
