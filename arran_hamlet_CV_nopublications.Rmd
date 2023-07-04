@@ -199,7 +199,7 @@ pubs %>%
     .protect = TRUE
   )
 ```
-## Number of additional publications
+## 36 additional non-first author publications
 ```{r publications_additional}
 name_in_first_couple <- pubs[which(pubs$first_author == F & grepl("Hamlet", pubs$author)), ]
 # name_in_first_couple <- name_in_first_couple[rev(order(name_in_first_couple$cites)), ]
