@@ -47,7 +47,6 @@ tribble(
     "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Primarily working on disease outbreak response, surveillance and policy.",
   "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Projects include: Estimating the burden of long COVID in Washington state, Evaluating Tuberculosis and Rabies surveillance systems, Tuberculosis in the correctional system in Washington state, and communicable disease outbreak investigations.",
 
-  
   "Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Visiting researcher for mathematical and statistical modelling of malaria.",
   
   "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models. ",
@@ -75,9 +74,10 @@ tribble(
 ```{r consultancy}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Teaching lead and curriculum designer", "AppliedEpi", "Online", "Jan 2022 - ", "Responsible for creating learning materials for self directed and taught courses designed to teach Epidemiologists how to code in R",
-    "Teaching lead and curriculum designer", "AppliedEpi", "Online", "Jan 2022 - ", "Lead and assisted on taught courses teaching applied epidemiology to various health depratments (Wales, Kazakhstan, Cambodia, Canada).",
-      "Teaching lead and curriculum designer", "AppliedEpi", "Online", "Jan 2022 - ", "Designed and created the Advanced Statistics in R course.",
+  "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Responsible for creating learning materials for self directed and taught courses designed to teach Epidemiologists how to code in R..",
+    "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Lead and assisted on taught courses teaching applied epidemiology to various Health Departments (Wales, Kazakhstan, Cambodia, Canada).",
+      "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Designed and created the Advanced Statistics in R course.",
+
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded. Aspects of data visualisation acknowledged in https://worldhealthorg.shinyapps.io/covid/.",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Continued to provide adhoc support till Dec 2020.",

@@ -1,0 +1,368 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Dr Arran Hamlet}{}
+
+\position{Epidemic Intelligence Service Officer}
+\address{Centers for Disease Control and Prevention, Atlanta, United
+States of America}
+
+\email{\href{mailto:arran_hamlet@hotmail.co.uk}{\nolinkurl{arran\_hamlet@hotmail.co.uk}}}
+\github{arranhamlet}
+\linkedin{arranhamlet}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{Infectious disease epidemiologist and mathematical modeller with
+extensive experience in data analysis and statistical/mechanistic
+modelling to inform outbreak response and public health policy. Strong
+interest in work within LMIC settings and the programming of interactive
+tools for data analysis and decision making.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {July, 2023}
+    {Dr Arran Hamlet~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{qualifications}{%
+\section{Qualifications}\label{qualifications}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'}{Jan 2017-Jan 2020}{London, United Kingdom}{\begin{cvitems}
+\item Project focused on understanding the epidemiology of yellow fever across South America, with a focus on Brazil, examining the roles of climate, environment and host, using a variety of statistical and mechanistic modelling techniques.
+\item Awarded 3 Medical Research Council (MRC) Exceptional Training Opportunity awards (total £4,589) and a MRC pump priming award (£23,000) to present results as well as teach, design and run workshops in Brazil and Colombia for Ministries of Health and Universities.
+\item Supervised by Dr Tini Garske and Professor Neil Ferguson, fully funded by the UK Medical Research Council.
+\end{cvitems}}
+    \cventry{Imperial College London}{MSc in Epidemiology}{Oct 2014-Oct 2015}{London, United Kingdom}{\begin{cvitems}
+\item Studied a broad collection of topics before specialising in infectious disease epidemiology.
+\item Awarded a distinction for my dissertation project titled 'The Seasonality of Yellow Fever in Africa.'
+\end{cvitems}}
+    \cventry{Queen Mary University of London}{BSc in Biology with Psychology}{Sep 2011-May 2014}{London, United Kingdom}{\begin{cvitems}
+\item Graduated with Upper Second-class Honours (2.1).
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+\begin{cventries}
+    \cventry{Centers for Disease Control and Prevention}{Epidemic Intelligence Service Officer}{July 2022-}{Seattle, United States of America}{\begin{cvitems}
+\item Epidemic Intelligence Service Officer for the state of Washington.
+\item Primarily working on disease outbreak response, surveillance and policy.
+\item Projects include: Estimating the burden of long COVID in Washington state, Evaluating Tuberculosis and Rabies surveillance systems, Tuberculosis in the correctional system in Washington state, and communicable disease outbreak investigations.
+\end{cvitems}}
+    \cventry{Imperial College London}{Visiting Researcher}{Jun 2022-}{London, United Kingdom}{\begin{cvitems}
+\item Visiting researcher for mathematical and statistical modelling of malaria.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (Malaria)}{Jan 2020-Jun 2022}{London, United Kingdom}{\begin{cvitems}
+\item Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models. 
+\item Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.
+\item Lead researcher on a piece of work assessing the potential impact of Anopheles stephensi establishment on malaria transmission in Ethiopia.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (Nigeria COVID-19 response)}{Apr 2020-Dec 2020}{London, United Kingdom}{\begin{cvitems}
+\item Lead researcher for Imperial College London's data analytics and modelling support for Nigeria.
+\item Conducted analysis to answer specific questions in order to provide evidence for decisions to be made by the Nigerian Presidential Task Force.
+\item Produced a multitidue of reports as well as regular state-specicic analysis that fed into NCDC, US CDC and UK Department for International Development decision making.
+\item A number of position papers can be found at https://statehouse.gov.ng/covid19/2020/09/18/evidence-based-guidance-on-measures-to-curb-the-spread-of-covid-19/.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (COVID-19 response)}{Feb 2020-Dec 2020}{London, United Kingdom}{\begin{cvitems}
+\item Provided technical support and input for numerous reports and projects, with a focus on work in Low-to-Middle-Income Countries (LMIC) and on quantifying the underascertainment of mortality.
+\item Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.
+\end{cvitems}}
+    \cventry{Imperial College London}{PhD in Infectious Disease Modelling}{Jan 2017 - Jan 2020}{London, United Kingdom}{\begin{cvitems}
+\item PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.
+\end{cvitems}}
+    \cventry{Imperial College London}{Research Assistant}{Oct 2015 - Dec 2016}{London, United Kingdom}{\begin{cvitems}
+\item Outbreak analysis and response for the 2015-2016 outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO).
+\item Responsible for estimating population-level vaccination coverage across Africa and the development of an open-source tool to explore this information. Currently utilised by researchers and the WHO.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{consultancy}{%
+\section{Consultancy}\label{consultancy}}
+
+\begin{cventries}
+    \cventry{AppliedEpi}{Course Instructor and Curriculum Designer}{Jan 2022 - }{Online}{\begin{cvitems}
+\item Responsible for creating learning materials for self directed and taught courses designed to teach Epidemiologists how to code in R..
+\item Lead and assisted on taught courses teaching applied epidemiology to various Health Departments (Wales, Kazakhstan, Cambodia, Canada).
+\item Designed and created the Advanced Statistics in R course.
+\end{cvitems}}
+    \cventry{World Health Organization}{Epidemiologist: COVID-19}{Feb 2020 - Apr 2020}{Geneva, Switzerland}{\begin{cvitems}
+\item Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment
+\item Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded. Aspects of data visualisation acknowledged in https://worldhealthorg.shinyapps.io/covid/.
+\item Continued to provide adhoc support till Dec 2020.
+\end{cvitems}}
+    \cventry{World Health Organization}{Epidemiologist: Yellow fever}{Jul 2016 - Sep 2016}{Geneva, Switzerland}{\begin{cvitems}
+\item Commissioned to produce a report evaluating the risk of outbreaks of yellow fever across Africa as a result of ongoing transmission in Angola and the Democratic Republic of the Congo and the potential for introduction into Asia.
+\end{cvitems}}
+    \cventry{Ozygen Systems}{Epidemiologist}{Feb 2016 - Mar 2016}{London, United Kingdom}{\begin{cvitems}
+\item Hired to produce a report on numerous pathogens involved in nosocomial infection and to evaluate the applicability of ozone decontamination technology in UK healthcare settings to limit their spread.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{Shortcourse co-organiser}{Jan 2021 - Sep 2021}{London, United Kingdom}{\begin{cvitems}
+\item Co-organiser on the departments 'Mathematical modelling for the control of infectious diseases' short course, run since 1990 and designed to teach pubic health professionals about infectious disease modelling.
+\item Responsible for helping redesign, and restructure, the course in order to deliver it fully online in light of the ongoing COVID-19 pandemic.
+\end{cvitems}}
+    \cventry{University of São Paulo}{PhD Assessor}{Oct 2020-}{São Paulo, Brazil}{\begin{cvitems}
+\item Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'.
+\end{cvitems}}
+    \cventry{Imperial College London}{MSc Dissertation Supervisor}{May 2020 - Oct 2020}{London, United Kingdom}{\begin{cvitems}
+\item Designed and supervised MSc Epidemiology projects looking at the effect of forest fragmentation on yellow fever in Southern Brazil, and exploring the differences in transmission dynamics between yellow fever, dengue and zika.
+\end{cvitems}}
+    \cventry{Imperial College London}{Graduate Teaching Assistant}{Jan 2017 - Jun 2022}{London, United Kingdom}{\begin{cvitems}
+\item Teaching assistant and demonstrator for numerous modules on infectious disease modelling, statistical analysis and epidemiology.
+\end{cvitems}}
+    \cventry{Imperial College London}{Shortcourse Demonstrator}{Jun 2019}{Bogota, Colombia}{\begin{cvitems}
+\item Demonstrator and lecturer on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling.
+\end{cvitems}}
+    \cventry{Imperial College London}{Shortcourse Demonstrator}{Sep 2017/Sep 2018/Sep 2019}{London, United Kingdom}{\begin{cvitems}
+\item Demonstrator on numerous practical exercises and lectures on data analysis and infectious disease modelling on the aformentioned departments 'Mathematical modelling for the control of infectious diseases' short course.
+\end{cvitems}}
+    \cventry{Imperial College London}{Design and implementation of an online platform for teaching infectious disease modelling}{Jan 2019 - Sept 2019}{London, United Kingdom}{\begin{cvitems}
+\item Responsible for liasing between programming team and course organisers to design and translate existing practicals from Berkely Madonna to an online web interface running the Odin language.
+\item Highly successful implementation with the platform now being used for both future shortcourses and the MSc Epidemiology at Imperial College London.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{funding-awards}{%
+\section{Funding awards}\label{funding-awards}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{MRC Pump Priming (£23,000)}{Nov 2019}{London, United Kingdom}{\begin{cvitems}
+\item Jointly awarded £23,000 with co-PI Natsuko Imai to run a week long training workshop in Rio de Janeiro focusing on the use of mathematical models in outbreak response and policy in July 2020.
+\item Course was to be run collaboratively with the Brazilian Ministry of Health and Fundação Oswaldo Cruz (Fiocruz).
+\item Postponed due to the COVID-19 pandemic and rescheduled for August 2022.
+\end{cvitems}}
+    \cventry{Imperial College London}{MRC Exceptional Training Opportunity}{Oct 2017/Aug 2018/Jun 2019}{London, United Kingdom}{\begin{cvitems}
+\item Oct 2017: Awarded £650 to travel to the WHO in Geneva, Switzerland to present my work on yellow fever and discuss with the yellow fever team how my PhD can provide support for their activities.
+\item Aug 2018: Awarded £2220 to travel to Rio de Janiro and Brasilia, Brazil, and present my results on modelling yellow fever in South America at a meeting co-hosted by the Brazilian Ministry of Health and the Pan American Health Organization, as well as to set up a research collaboration with Fiocruz.
+\item Jun 2019: Awarded £1719 to travel to Bogota, Colombia to lecture and demonstrate on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\begin{cventries}
+    \cventry{EIS Conference 2023 and CSTE 2023}{Gastrointestinal illness among hikers on the Washington State Pacific Crest Trail, August–October 2022.}{Apr 2023}{Atlanta, United States of America}{}\vspace{-4.0mm}
+    \cventry{London Malaria Network}{The potential public health consequences of COVID-19 on malaria in Africa}{Oct 2020}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{American Society of Tropical Medicine and Hygiene}{Seasonality of agricultural exposure more important than seasonality of climate for predicting yellow fever transmission in Brazil}{Nov 2019}{National Harbor, United States of America}{}\vspace{-4.0mm}
+    \cventry{Outbreak Analysis and Modelling for Public Health}{Statistical and mathematical modelling of yellow fever in South America}{Jun 2019}{Bogota, Colombia}{}\vspace{-4.0mm}
+    \cventry{International Conference on One Medicine One Science}{Land-use,  vegetation  and  habitat fragmentation  as  drivers  of  yellow  fever  transmission  in  South America}{Feb 2019}{Chiang Mai, Thailand}{}\vspace{-4.0mm}
+    \cventry{Yellow fever forecasting: Embedding   modelling in lessons learnt exercises}{Yellow fever in Brazil - Modelling as a tool to inform outbreak response and public health policy}{Nov 2018}{Brasilia, Brazil}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{first-author-publications}{%
+\subsection{First author publications}\label{first-author-publications}}
+
+\begin{cventries}
+<<<<<<< HEAD:doc/arran_hamlet_CV/arran_hamlet_CV.tex
+    \cventry{*A Hamlet*, D Dengela, JE Tongren, FG Tadesse, T Bousema, M Sinka, A Seyoum, SR Irish, JS Armistead, T Churcher}{The potential impact of Anopheles stephensi establishment on the transmission of Plasmodium falciparum in Ethiopia and prospective control measures}{BMC medicine}{2022}{}\vspace{-4.0mm}
+    \cventry{*A Hamlet*, DG Ramos, KAM Gaythorpe, APM Romano, T Garske, NM Ferguson}{Seasonality of agricultural exposure as an important predictor of seasonal yellow fever spillover in Brazil}{Nature Communications}{2021}{}\vspace{-4.0mm}
+    \cventry{*A Hamlet*, KAM Gaythorpe, T Garske, NM Ferguson}{Seasonal and inter-annual drivers of yellow fever transmission in South America}{PLoS neglected tropical diseases}{2021}{}\vspace{-4.0mm}
+    \cventry{*A Hamlet*}{Yellow fever in South America: The role of environment and host on transmission dynamics}{Imperial College London}{2020}{}\vspace{-4.0mm}
+    \cventry{*A Hamlet*, K Jean, S Yactayo, J Benzler, L Cibrelus, N Ferguson, T Garske}{POLICI: A web application for visualising and extracting yellow fever vaccination coverage in Africa}{Vaccine}{2019}{}\vspace{-4.0mm}
+    \cventry{*A Hamlet*, Kév Jean, W Perea, S Yactayo, J Biey, MV Kerkhove, N Ferguson, T Garske}{The seasonal influence of climate and environment on yellow fever transmission across Africa}{PLoS neglected tropical diseases}{2018}{}\vspace{-4.0mm}
+=======
+    \cventry{The potential impact of Anopheles stephensi establishment on the transmission of Plasmodium falciparum in Ethiopia and prospective control measures}{*A Hamlet*, D Dengela, JE Tongren, FG Tadesse, T Bousema, M Sinka, A Seyoum, SR Irish, JS Armistead, T Churcher}{BMC medicine}{2022}{}\vspace{-4.0mm}
+    \cventry{Seasonality of agricultural exposure as an important predictor of seasonal yellow fever spillover in Brazil}{*A Hamlet*, DG Ramos, KAM Gaythorpe, APM Romano, T Garske, NM Ferguson}{Nature Communications}{2021}{}\vspace{-4.0mm}
+    \cventry{Seasonal and inter-annual drivers of yellow fever transmission in South America}{*A Hamlet*, KAM Gaythorpe, T Garske, NM Ferguson}{PLoS neglected tropical diseases}{2021}{}\vspace{-4.0mm}
+    \cventry{Yellow fever in South America: The role of environment and host on transmission dynamics}{*A Hamlet*}{Imperial College London}{2020}{}\vspace{-4.0mm}
+    \cventry{POLICI: A web application for visualising and extracting yellow fever vaccination coverage in Africa}{*A Hamlet*, K Jean, S Yactayo, J Benzler, L Cibrelus, N Ferguson, T Garske}{Vaccine}{2019}{}\vspace{-4.0mm}
+    \cventry{The seasonal influence of climate and environment on yellow fever transmission across Africa}{*A Hamlet*, Kév Jean, W Perea, S Yactayo, J Biey, MV Kerkhove, N Ferguson, T Garske}{PLoS neglected tropical diseases}{2018}{}\vspace{-4.0mm}
+>>>>>>> ccdf85fc94cc21de2e350cb6147e76178334b20b:arran_hamlet_CV.tex
+\end{cventries}
+
+\hypertarget{additional-publications}{%
+\subsection{Additional publications}\label{additional-publications}}
+
+\begin{cventries}
+<<<<<<< HEAD:doc/arran_hamlet_CV/arran_hamlet_CV.tex
+    \cventry{C Whittaker, *A Hamlet*, E Sherrard-Smith, P Winskill, G Cuomo-Dannenburg, PGT Walker, M Sinka, S Pironon, A Kumar, A Ghani, S Bhatt, TS Churcher}{Seasonal dynamics of Anopheles stephensi and its implications for mosquito detection and emergent malaria control in the Horn of Africa}{Proceedings of the National Academy of Sciences}{2023}{}\vspace{-4.0mm}
+    \cventry{E-Y Caicedo, K Charniga, A Rueda, I Dorigatti, Y Mendez, *A Hamlet*, J-P Carrera, ZM Cucunubá}{Correction: The epidemiology of Mayaro virus in the Americas: A systematic review and key parameter estimates for outbreak modelling}{PLOS Neglected Tropical Diseases}{2023}{}\vspace{-4.0mm}
+    \cventry{R McCabe, C Whittaker, RJ Sheppard, N Abdelmagid, A Ahmed, IZ Alabdeen, NF Brazeau, AAA Elhameed, AS Bin-Ghouth, *A Hamlet*, R AbuKoura, G Barnsley, JA Hay, M Alhaffar, EK Besson, SM Saje, BG Sisay, SH Gebreyesus, AP Sikamo, A Worku, YS Ahmed, DH Mariam, MM Sisay, F Checchi, M Dahab, BS Endris, AC Ghani, PGT Walker, CA Donnelly, OJ Watson}{Alternative epidemic indicators for COVID-19 in three settings with incomplete death registration systems}{Science Advances}{2023}{}\vspace{-4.0mm}
+    \cventry{E Sherrard-Smith, P Winskill, *A Hamlet*, C Ngufor, R N'Guessan, MW Guelbeogo, A Sanou, RK Nash, A Hill, EL Russell, M Woodbridge, PK Tungu, MD Kont, T Mclean, C Fornadel, JH Richardson, MJ Donnelly, SG Staedke, S Gonahasa, N Protopopoff, M Rowland, TS Churcher}{Optimising the deployment of vector control tools against malaria: a data-informed modelling study}{The Lancet Planetary Health}{2022}{}\vspace{-4.0mm}
+    \cventry{HA Shah, LR Carrasco, *A Hamlet*, KA Murray}{Exploring agricultural land-use and childhood malaria associations in sub-Saharan Africa}{Scientific reports}{2022}{}\vspace{-4.0mm}
+    \cventry{JA Polonsky, S Bhatia, K Fraser, *A Hamlet*, J Skarp, IJ Stopard, Sép Hugonnet, L Kaiser, C Lengeler, K Blanchet, P Spiegel}{Feasibility, acceptability, and effectiveness of non-pharmaceutical interventions against infectious diseases among crisis-affected populations: a scoping review}{Infectious diseases of poverty}{2022}{}\vspace{-4.0mm}
+    \cventry{SL Li, AéL Acosta, SC Hill, OJ Brady, MABd Almeida, JdC Cardoso, *A Hamlet*, LF Mucci, JTd Deus, FCM Iani, NS Alexander, GRW Wint, OG Pybus, MUG Kraemer, NR Faria, JP Messina}{Mapping environmental suitability of Haemagogus and Sabethes spp. mosquitoes to understand sylvatic transmission risk of yellow fever virus in Brazil}{PLoS neglected tropical diseases}{2022}{}\vspace{-4.0mm}
+    \cventry{C Whittaker, OJ Watson, C Alvarez-Moreno, N Angkasekwinai, A Boonyasiri, LC Triana, D Chanda, L Charoenpong, M Chayakulkeeree, GS Cooke, J Croda, ZM Cucunubá, BA Djaafara, CF Estofolete, ME Grillet, NR Faria, SF Costa, DA Forero-Peña, DM Gibb, AC Gordon, RL Hamers, *A Hamlet*, V Irawany, A Jitmuang, N Keurueangkul, TN Kimani, M Lampo, AS Levin, G Lopardo, R Mustafa, S Nayagam, T Ngamprasertchai, N’a’aIH Njeri, ML Nogueira, E Ortiz-Prado, MWP Jr, AN Phillips, P Promsin, A Qavi, AJ Rodger, EC Sabino, S Sangkaew, D Sari, R Sirijatuphat, AC Sposito, P Srisangthong, HA Thompson, Z Udwadia, S Valderrama-Beltran, P Winskill, AC Ghani, PGT Walker, TB Hallett}{Understanding the potential impact of different drug properties on severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) transmission and disease burden: A modelling …}{Clinical Infectious Diseases}{2022}{}\vspace{-4.0mm}
+    \cventry{E Sherrard-Smith, P Winskill, *A Hamlet*}{Optimising the deployment of vector control tools against malaria: a data-informed modelling study (vol 6, pg e100, 2022)}{LANCET PLANETARY HEALTH}{2022}{}\vspace{-4.0mm}
+    \cventry{P Nouvellet, S Bhatia, A Cori, KEC Ainslie, M Baguelin, S Bhatt, A Boonyasiri, NF Brazeau, L Cattarino, LV Cooper, H Coupland, ZM Cucunuba, G Cuomo-Dannenburg, A Dighe, BA Djaafara, I Dorigatti, OD Eales, SLv Elsland, FF Nascimento, RG FitzJohn, KAM Gaythorpe, L Geidelberg, WD Green, *A Hamlet*, K Hauck, W Hinsley, N Imai, B Jeffrey, E Knock, DJ Laydon, JA Lees, T Mangal, TA Mellan, G Nedjati-Gilani, KV Parag, M Pons-Salort, M Ragonnet-Cronin, S Riley, HJT Unwin, R Verity, MAC Vollmer, E Volz, PGT Walker, CE Walters, H Wang, OJ Watson, C Whittaker, LK Whittles, X Xi, NM Ferguson, CA Donnelly}{Reduction in mobility and COVID-19 transmission}{Nature communications}{2021}{}\vspace{-4.0mm}
+    \cventry{C Whittaker, PGT Walker, M Alhaffar, *A Hamlet*, BA Djaafara, A Ghani, N Ferguson, M Dahab, F Checchi, OJ Watson}{Under-reporting of deaths limits our understanding of true burden of covid-19}{bmj}{2021}{}\vspace{-4.0mm}
+    \cventry{AB Hogan, P Winskill, OJ Watson, PGT Walker, C Whittaker, M Baguelin, NF Brazeau, GD Charles, KAM Gaythorpe, *A Hamlet*, E Knock, DJ Laydon, JA Lees, A Løchen, R Verity, LK Whittles, F Muhib, K Hauck, NM Ferguson, AC Ghani}{Within-country age-based prioritisation, global allocation, and public health impact of a vaccine against SARS-CoV-2: A mathematical modelling analysis}{Vaccine}{2021}{}\vspace{-4.0mm}
+    \cventry{KAM Gaythorpe, *A Hamlet*, K Jean, DG Ramos, L Cibrelus, T Garske, N Ferguson}{The global burden of yellow fever}{Elife}{2021}{}\vspace{-4.0mm}
+    \cventry{OJ Watson, M Alhaffar, Z Mehchy, C Whittaker, Z Akil, NF Brazeau, G Cuomo-Dannenburg, *A Hamlet*, HA Thompson, M Baguelin, RG FitzJohn, E Knock, JA Lees, LK Whittles, T Mellan, P Winskill, ICCOVID-19RTBSDBA.DCA.FSGKAMINJELDJ.MSUH.JT.VR 1, N Howard, H Clapham, F Checchi, N Ferguson, A Ghani, E Beals, P Walker}{Leveraging community mortality indicators to infer COVID-19 mortality and transmission dynamics in Damascus, Syria}{Nature communications}{2021}{}\vspace{-4.0mm}
+    \cventry{E-Y Caicedo, K Charniga, A Rueda, I Dorigatti, Y Mendez, *A Hamlet*, J-P Carrera, ZM Cucunubá}{The epidemiology of Mayaro virus in the Americas: A systematic review and key parameter estimates for outbreak modelling}{PLoS neglected tropical diseases}{2021}{}\vspace{-4.0mm}
+    \cventry{H Fu, H Wang, X Xi, A Boonyasiri, Y Wang, W Hinsley, KJ Fraser, R McCabe, DO Mesa, J Skarp, A Ledda, T Dewé, A Dighe, P Winskill, SLv Elsland, KEC Ainslie, M Baguelin, S Bhatt, O Boyd, NF Brazeau, L Cattarino, G Charles, H Coupland, ZM Cucunuba, G Cuomo-Dannenburg, CA Donnelly, I Dorigatti, OD Eales, RG FitzJohn, S Flaxman, KAM Gaythorpe, AC Ghani, WD Green, *A Hamlet*, K Hauck, DJ Haw, B Jeffrey, DJ Laydon, JA Lees, T Mellan, S Mishra, G Nedjati-Gilani, P Nouvellet, L Okell, KV Parag, M Ragonnet-Cronin, S Riley, N Schmit, HA Thompson, HJT Unwin, R Verity, MAC Vollmer, E Volz, PGT Walker, CE Walters, OJ Watson, C Whittaker, LK Whittles, N Imai, S Bhatia, NM Ferguson}{Database of epidemic trends and control measures during the first wave of COVID-19 in mainland China}{International Journal of Infectious Diseases}{2021}{}\vspace{-4.0mm}
+    \cventry{N Raslan, *A Hamlet*, V Kumari}{Mental health and psychosocial support in conflict: children’s protection concerns and intervention outcomes in Syria}{Conflict and health}{2021}{}\vspace{-4.0mm}
+    \cventry{Kév Jean, H Raad, KAM Gaythorpe, *A Hamlet*, JE Mueller, D Hogan, T Mengistu, HJ Whitaker, T Garske, MN Hocine}{Assessing the impact of preventive mass vaccination campaigns on yellow fever outbreaks in Africa: A population-level self-controlled case series study}{PLoS medicine}{2021}{}\vspace{-4.0mm}
+    \cventry{CA Donnelly, S Bhatia, N Imai, G Cuomo-Dannenburg, M Baguelin, A Boonyasiri, A Cori, Z Cucunubá, I Dorigatti, R FitzJohn, H Fu, K Gaythorpe, A Ghani, *A Hamlet*, W Hinsley, D Laydon, G Nedjati-Gilani, L Okell, S Riley, H Thompson, Sv Elsland, E Volz, H Wang, Y Wang, C Whittaker, X Xi, NM Ferguson}{Estimating the number of undetected COVID-19 cases among travellers from mainland China}{Wellcome Open Research}{2021}{}\vspace{-4.0mm}
+    \cventry{R Verity, LC Okell, I Dorigatti, P Winskill, C Whittaker, N Imai, G Cuomo-Dannenburg, H Thompson, PGT Walker, H Fu, A Dighe, JT Griffin, M Baguelin, S Bhatia, A Boonyasiri, A Cori, Z Cucunubá, R FitzJohn, K Gaythorpe, W Green, *A Hamlet*, W Hinsley, D Laydon, G Nedjati-Gilani, S Riley, SV Elsland, E Volz, H Wang, Y Wang, X Xi, CA Donnelly, AC Ghani, NM Ferguson}{Estimates of the severity of coronavirus disease 2019: a model-based analysis}{The Lancet infectious diseases}{2020}{}\vspace{-4.0mm}
+    \cventry{PGT Walker, C Whittaker, OJ Watson, M Baguelin, P Winskill, *A Hamlet*, BA Djafaara, Z Cucunubá, DO Mesa, W Green, H Thompson, S Nayagam, KEC Ainslie, S Bhatia, S Bhatt, A Boonyasiri, O Boyd, NF Brazeau, L Cattarino, G Cuomo-Dannenburg, A Dighe, CA Donnelly, I Dorigatti, SLV Elsland, R FitzJohn, H Fu, KAM Gaythorpe, L Geidelberg, N Grassly, D Haw, S Hayes, W Hinsley, N Imai, D Jorgensen, E Knock, D Laydon, S Mishra, G Nedjati-Gilani, LC Okell, HJ Unwin, R Verity, M Vollmer, CE Walters, H Wang, Y Wang, X Xi, DG Lalloo, NM Ferguson, AC Ghani}{The impact of COVID-19 and strategies for mitigation and suppression in low-and middle-income countries}{Science}{2020}{}\vspace{-4.0mm}
+    \cventry{AB Hogan, BL Jewell, E Sherrard-Smith, JF Vesga, OJ Watson, C Whittaker, *A Hamlet*, JA Smith, P Winskill, R Verity, M Baguelin, JA Lees, LK Whittles, KEC Ainslie, S Bhatt, A Boonyasiri, NF Brazeau, L Cattarino, LV Cooper, H Coupland, G Cuomo-Dannenburg, A Dighe, BA Djaafara, CA Donnelly, JW Eaton, SLv Elsland, RG FitzJohn, H Fu, KAM Gaythorpe, W Green, DJ Haw, S Hayes, W Hinsley, N Imai, DJ Laydon, TD Mangal, TA Mellan, S Mishra, G Nedjati-Gilani, KV Parag, HA Thompson, HJT Unwin, MAC Vollmer, CE Walters, H Wang, Y Wang, X Xi, NM Ferguson, LC Okell, TS Churcher, N Arinaminpathy, AC Ghani, PGT Walker, TB Hallett}{Potential impact of the COVID-19 pandemic on HIV, tuberculosis, and malaria in low-income and middle-income countries: a modelling study}{The Lancet global health}{2020}{}\vspace{-4.0mm}
+    \cventry{NC Grassly, M Pons-Salort, EPK Parker, PJ White, NM Ferguson, K Ainslie, M Baguelin, S Bhatt, A Boonyasiri, N Brazeau, L Cattarino, H Coupland, Z Cucunuba, G Cuomo-Dannenburg, A Dighe, C Donnelly, SLv Elsland, R FitzJohn, S Flaxman, K Fraser, K Gaythorpe, W Green, *A Hamlet*, W Hinsley, N Imai, E Knock, D Laydon, T Mellan, S Mishra, G Nedjati-Gilani, P Nouvellet, L Okell, M Ragonnet-Cronin, HA Thompson, HJT Unwin, M Vollmer, E Volz, C Walters, Y Wang, OJ Watson, C Whittaker, L Whittles, X Xi}{Comparison of molecular testing strategies for COVID-19 control: a mathematical modelling study}{The Lancet Infectious Diseases}{2020}{}\vspace{-4.0mm}
+    \cventry{E Sherrard-Smith, AB Hogan, *A Hamlet*, OJ Watson, C Whittaker, P Winskill, F Ali, AB Mohammad, P Uhomoibhi, I Maikore, N Ogbulafor, J Nikau, MD Kont, JD Challenger, R Verity, B Lambert, M Cairns, B Rao, M Baguelin, LK Whittles, JA Lees, S Bhatia, ES Knock, L Okell, HC Slater, AC Ghani, PGT Walker, OO Okoko, TS Churcher}{The potential public health consequences of COVID-19 on malaria in Africa}{Nature medicine}{2020}{}\vspace{-4.0mm}
+    \cventry{KEC Ainslie, CE Walters, H Fu, S Bhatia, H Wang, X Xi, M Baguelin, S Bhatt, A Boonyasiri, O Boyd, L Cattarino, C Ciavarella, Z Cucunuba, G Cuomo-Dannenburg, A Dighe, I Dorigatti, SLv Elsland, R FitzJohn, K Gaythorpe, AC Ghani, W Green, *A Hamlet*, W Hinsley, N Imai, D Jorgensen, E Knock, D Laydon, G Nedjati-Gilani, LC Okell, I Siveroni, HA Thompson, HJT Unwin, R Verity, M Vollmer, PGT Walker, Y Wang, OJ Watson, C Whittaker, P Winskill, CA Donnelly, NM Ferguson, S Riley}{Evidence of initial success for China exiting COVID-19 social distancing policy after achieving containment}{Wellcome Open Research}{2020}{}\vspace{-4.0mm}
+    \cventry{KAM Gaythorpe, *A Hamlet*, L Cibrelus, T Garske, NM Ferguson}{The effect of climate change on yellow fever disease burden in Africa}{Elife}{2020}{}\vspace{-4.0mm}
+    \cventry{Kév Jean, *A Hamlet*, J Benzler, L Cibrelus, KAM Gaythorpe, A Sall, NM Ferguson, T Garske}{Eliminating yellow fever epidemics in Africa: vaccine demand forecast and impact modelling}{PLoS neglected tropical diseases}{2020}{}\vspace{-4.0mm}
+    \cventry{HA Thompson, N Imai, A Dighe, KEC Ainslie, M Baguelin, S Bhatia, S Bhatt, A Boonyasiri, O Boyd, NF Brazeau, L Cattarino, LV Cooper, H Coupland, Z Cucunuba, G Cuomo-Dannenburg, B Djaafara, I Dorigatti, SV Elsland, R FitzJohn, H Fu, KAM Gaythorpe, W Green, T Hallett, *A Hamlet*, D Haw, S Hayes, W Hinsley, B Jeffrey, E Knock, DJ Laydon, J Lees, TD Mangal, T Mellan, S Mishra, A Mousa, G Nedjati-Gilani, P Nouvellet, L Okell, KV Parag, M Ragonnet-Cronin, S Riley, HJT Unwin, R Verity, M Vollmer, E Volz, PGT Walker, C Walters, H Wang, Y Wang, OJ Watson, C Whittaker, LK Whittles, P Winskill, X Xi, CA Donnelly, NM Ferguson}{SARS-CoV-2 infection prevalence on repatriation flights from Wuhan City, China}{Journal of travel medicine}{2020}{}\vspace{-4.0mm}
+    \cventry{I Dorigatti, *A Hamlet*, R Aguas, L Cattarino, A Cori, CA Donnelly, T Garske, N Imai, NM Ferguson}{International risk of yellow fever spread from the ongoing outbreak in Brazil, December 2016 to May 2017}{Eurosurveillance}{2017}{}\vspace{-4.0mm}
+    \cventry{D Cantoni, *A Hamlet*, M Michaelis, MN Wass, JS Rossman}{Risks posed by Reston, the forgotten ebolavirus}{Msphere}{2016}{}\vspace{-4.0mm}
+=======
+    \cventry{Seasonal dynamics of Anopheles stephensi and its implications for mosquito detection and emergent malaria control in the Horn of Africa}{C Whittaker, *A Hamlet*, E Sherrard-Smith, P Winskill, G Cuomo-Dannenburg, PGT Walker, M Sinka, S Pironon, A Kumar, A Ghani, S Bhatt, TS Churcher}{Proceedings of the National Academy of Sciences}{2023}{}\vspace{-4.0mm}
+    \cventry{Correction: The epidemiology of Mayaro virus in the Americas: A systematic review and key parameter estimates for outbreak modelling}{E-Y Caicedo, K Charniga, A Rueda, I Dorigatti, Y Mendez, *A Hamlet*, J-P Carrera, ZM Cucunubá}{PLOS Neglected Tropical Diseases}{2023}{}\vspace{-4.0mm}
+    \cventry{Alternative epidemic indicators for COVID-19 in three settings with incomplete death registration systems}{R McCabe, C Whittaker, RJ Sheppard, N Abdelmagid, A Ahmed, IZ Alabdeen, NF Brazeau, AAA Elhameed, AS Bin-Ghouth, *A Hamlet*, R AbuKoura, G Barnsley, JA Hay, M Alhaffar, EK Besson, SM Saje, BG Sisay, SH Gebreyesus, AP Sikamo, A Worku, YS Ahmed, DH Mariam, MM Sisay, F Checchi, M Dahab, BS Endris, AC Ghani, PGT Walker, CA Donnelly, OJ Watson}{Science Advances}{2023}{}\vspace{-4.0mm}
+    \cventry{Optimising the deployment of vector control tools against malaria: a data-informed modelling study}{E Sherrard-Smith, P Winskill, *A Hamlet*, C Ngufor, R N'Guessan, MW Guelbeogo, A Sanou, RK Nash, A Hill, EL Russell, M Woodbridge, PK Tungu, MD Kont, T Mclean, C Fornadel, JH Richardson, MJ Donnelly, SG Staedke, S Gonahasa, N Protopopoff, M Rowland, TS Churcher}{The Lancet Planetary Health}{2022}{}\vspace{-4.0mm}
+    \cventry{Exploring agricultural land-use and childhood malaria associations in sub-Saharan Africa}{HA Shah, LR Carrasco, *A Hamlet*, KA Murray}{Scientific reports}{2022}{}\vspace{-4.0mm}
+    \cventry{Feasibility, acceptability, and effectiveness of non-pharmaceutical interventions against infectious diseases among crisis-affected populations: a scoping review}{JA Polonsky, S Bhatia, K Fraser, *A Hamlet*, J Skarp, IJ Stopard, Sép Hugonnet, L Kaiser, C Lengeler, K Blanchet, P Spiegel}{Infectious diseases of poverty}{2022}{}\vspace{-4.0mm}
+    \cventry{Mapping environmental suitability of Haemagogus and Sabethes spp. mosquitoes to understand sylvatic transmission risk of yellow fever virus in Brazil}{SL Li, AéL Acosta, SC Hill, OJ Brady, MABd Almeida, JdC Cardoso, *A Hamlet*, LF Mucci, JTd Deus, FCM Iani, NS Alexander, GRW Wint, OG Pybus, MUG Kraemer, NR Faria, JP Messina}{PLoS neglected tropical diseases}{2022}{}\vspace{-4.0mm}
+    \cventry{Understanding the potential impact of different drug properties on severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) transmission and disease burden: A modelling …}{C Whittaker, OJ Watson, C Alvarez-Moreno, N Angkasekwinai, A Boonyasiri, LC Triana, D Chanda, L Charoenpong, M Chayakulkeeree, GS Cooke, J Croda, ZM Cucunubá, BA Djaafara, CF Estofolete, ME Grillet, NR Faria, SF Costa, DA Forero-Peña, DM Gibb, AC Gordon, RL Hamers, *A Hamlet*, V Irawany, A Jitmuang, N Keurueangkul, TN Kimani, M Lampo, AS Levin, G Lopardo, R Mustafa, S Nayagam, T Ngamprasertchai, N’a’aIH Njeri, ML Nogueira, E Ortiz-Prado, MWP Jr, AN Phillips, P Promsin, A Qavi, AJ Rodger, EC Sabino, S Sangkaew, D Sari, R Sirijatuphat, AC Sposito, P Srisangthong, HA Thompson, Z Udwadia, S Valderrama-Beltran, P Winskill, AC Ghani, PGT Walker, TB Hallett}{Clinical Infectious Diseases}{2022}{}\vspace{-4.0mm}
+    \cventry{Optimising the deployment of vector control tools against malaria: a data-informed modelling study (vol 6, pg e100, 2022)}{E Sherrard-Smith, P Winskill, *A Hamlet*}{LANCET PLANETARY HEALTH}{2022}{}\vspace{-4.0mm}
+    \cventry{Reduction in mobility and COVID-19 transmission}{P Nouvellet, S Bhatia, A Cori, KEC Ainslie, M Baguelin, S Bhatt, A Boonyasiri, NF Brazeau, L Cattarino, LV Cooper, H Coupland, ZM Cucunuba, G Cuomo-Dannenburg, A Dighe, BA Djaafara, I Dorigatti, OD Eales, SLv Elsland, FF Nascimento, RG FitzJohn, KAM Gaythorpe, L Geidelberg, WD Green, *A Hamlet*, K Hauck, W Hinsley, N Imai, B Jeffrey, E Knock, DJ Laydon, JA Lees, T Mangal, TA Mellan, G Nedjati-Gilani, KV Parag, M Pons-Salort, M Ragonnet-Cronin, S Riley, HJT Unwin, R Verity, MAC Vollmer, E Volz, PGT Walker, CE Walters, H Wang, OJ Watson, C Whittaker, LK Whittles, X Xi, NM Ferguson, CA Donnelly}{Nature communications}{2021}{}\vspace{-4.0mm}
+    \cventry{Report 13: Estimating the number of infections and the impact of non-pharmaceutical interventions on COVID-19 in 11 European countries. 2020}{S Flaxman, S Mishra, A Gandy, H Unwin, H Coupland, T Mellan, H Zhu, T Berah, JW Eaton, PNP Guzman, N Schmit, L Cilloni, KEC Ainslie, M Baguelin, I Blake, A Boonyasiri, O Boyd, L Cattarino, C Ciavarella, L Cooper, Z Cucunubá, G Cuomo-Dannenburg, A Dighe, B Djaafara, I Dorigatti, SV Elsland, R FitzJohn, H Fu, K Gaythrope, L Geidelberg, N Grassly, W Green, T Hallett, *A Hamlet*, W Hinsley, B Jeffrey, D Jorgensen, E Knock, D Laydon, G Nedjati-Gilani, P Nouvellet, K Parag, I Siveroni, H Thompson, R Verity, E Volz, C Walters, H Wang, Y Wang, O Watson, P Winskill, Z Zi, C Whittaker, PGT Walker, A Ghani, CA Donnelly, S Riley, LC Okell, MAC Vollmer, NM Ferguson, S Bhatt}{URL https://www. imperial. ac. uk/mrc-global-infectious-disease-analysis …}{2021}{}\vspace{-4.0mm}
+    \cventry{Under-reporting of deaths limits our understanding of true burden of covid-19}{C Whittaker, PGT Walker, M Alhaffar, *A Hamlet*, BA Djaafara, A Ghani, N Ferguson, M Dahab, F Checchi, OJ Watson}{bmj}{2021}{}\vspace{-4.0mm}
+    \cventry{Within-country age-based prioritisation, global allocation, and public health impact of a vaccine against SARS-CoV-2: A mathematical modelling analysis}{AB Hogan, P Winskill, OJ Watson, PGT Walker, C Whittaker, M Baguelin, NF Brazeau, GD Charles, KAM Gaythorpe, *A Hamlet*, E Knock, DJ Laydon, JA Lees, A Løchen, R Verity, LK Whittles, F Muhib, K Hauck, NM Ferguson, AC Ghani}{Vaccine}{2021}{}\vspace{-4.0mm}
+    \cventry{The global burden of yellow fever}{KAM Gaythorpe, *A Hamlet*, K Jean, DG Ramos, L Cibrelus, T Garske, N Ferguson}{Elife}{2021}{}\vspace{-4.0mm}
+    \cventry{Leveraging community mortality indicators to infer COVID-19 mortality and transmission dynamics in Damascus, Syria}{OJ Watson, M Alhaffar, Z Mehchy, C Whittaker, Z Akil, NF Brazeau, G Cuomo-Dannenburg, *A Hamlet*, HA Thompson, M Baguelin, RG FitzJohn, E Knock, JA Lees, LK Whittles, T Mellan, P Winskill, ICCOVID-19RTBSDBA.DCA.FSGKAMINJELDJ.MSUH.JT.VR 1, N Howard, H Clapham, F Checchi, N Ferguson, A Ghani, E Beals, P Walker}{Nature communications}{2021}{}\vspace{-4.0mm}
+    \cventry{The epidemiology of Mayaro virus in the Americas: A systematic review and key parameter estimates for outbreak modelling}{E-Y Caicedo, K Charniga, A Rueda, I Dorigatti, Y Mendez, *A Hamlet*, J-P Carrera, ZM Cucunubá}{PLoS neglected tropical diseases}{2021}{}\vspace{-4.0mm}
+    \cventry{Database of epidemic trends and control measures during the first wave of COVID-19 in mainland China}{H Fu, H Wang, X Xi, A Boonyasiri, Y Wang, W Hinsley, KJ Fraser, R McCabe, DO Mesa, J Skarp, A Ledda, T Dewé, A Dighe, P Winskill, SLv Elsland, KEC Ainslie, M Baguelin, S Bhatt, O Boyd, NF Brazeau, L Cattarino, G Charles, H Coupland, ZM Cucunuba, G Cuomo-Dannenburg, CA Donnelly, I Dorigatti, OD Eales, RG FitzJohn, S Flaxman, KAM Gaythorpe, AC Ghani, WD Green, *A Hamlet*, K Hauck, DJ Haw, B Jeffrey, DJ Laydon, JA Lees, T Mellan, S Mishra, G Nedjati-Gilani, P Nouvellet, L Okell, KV Parag, M Ragonnet-Cronin, S Riley, N Schmit, HA Thompson, HJT Unwin, R Verity, MAC Vollmer, E Volz, PGT Walker, CE Walters, OJ Watson, C Whittaker, LK Whittles, N Imai, S Bhatia, NM Ferguson}{International Journal of Infectious Diseases}{2021}{}\vspace{-4.0mm}
+    \cventry{Mental health and psychosocial support in conflict: children’s protection concerns and intervention outcomes in Syria}{N Raslan, *A Hamlet*, V Kumari}{Conflict and health}{2021}{}\vspace{-4.0mm}
+    \cventry{Assessing the impact of preventive mass vaccination campaigns on yellow fever outbreaks in Africa: A population-level self-controlled case series study}{Kév Jean, H Raad, KAM Gaythorpe, *A Hamlet*, JE Mueller, D Hogan, T Mengistu, HJ Whitaker, T Garske, MN Hocine}{PLoS medicine}{2021}{}\vspace{-4.0mm}
+    \cventry{Estimating the number of undetected COVID-19 cases among travellers from mainland China}{CA Donnelly, S Bhatia, N Imai, G Cuomo-Dannenburg, M Baguelin, A Boonyasiri, A Cori, Z Cucunubá, I Dorigatti, R FitzJohn, H Fu, K Gaythorpe, A Ghani, *A Hamlet*, W Hinsley, D Laydon, G Nedjati-Gilani, L Okell, S Riley, H Thompson, Sv Elsland, E Volz, H Wang, Y Wang, C Whittaker, X Xi, NM Ferguson}{Wellcome Open Research}{2021}{}\vspace{-4.0mm}
+    \cventry{Estimates of the severity of coronavirus disease 2019: a model-based analysis}{R Verity, LC Okell, I Dorigatti, P Winskill, C Whittaker, N Imai, G Cuomo-Dannenburg, H Thompson, PGT Walker, H Fu, A Dighe, JT Griffin, M Baguelin, S Bhatia, A Boonyasiri, A Cori, Z Cucunubá, R FitzJohn, K Gaythorpe, W Green, *A Hamlet*, W Hinsley, D Laydon, G Nedjati-Gilani, S Riley, SV Elsland, E Volz, H Wang, Y Wang, X Xi, CA Donnelly, AC Ghani, NM Ferguson}{The Lancet infectious diseases}{2020}{}\vspace{-4.0mm}
+    \cventry{The impact of COVID-19 and strategies for mitigation and suppression in low-and middle-income countries}{PGT Walker, C Whittaker, OJ Watson, M Baguelin, P Winskill, *A Hamlet*, BA Djafaara, Z Cucunubá, DO Mesa, W Green, H Thompson, S Nayagam, KEC Ainslie, S Bhatia, S Bhatt, A Boonyasiri, O Boyd, NF Brazeau, L Cattarino, G Cuomo-Dannenburg, A Dighe, CA Donnelly, I Dorigatti, SLV Elsland, R FitzJohn, H Fu, KAM Gaythorpe, L Geidelberg, N Grassly, D Haw, S Hayes, W Hinsley, N Imai, D Jorgensen, E Knock, D Laydon, S Mishra, G Nedjati-Gilani, LC Okell, HJ Unwin, R Verity, M Vollmer, CE Walters, H Wang, Y Wang, X Xi, DG Lalloo, NM Ferguson, AC Ghani}{Science}{2020}{}\vspace{-4.0mm}
+    \cventry{Potential impact of the COVID-19 pandemic on HIV, tuberculosis, and malaria in low-income and middle-income countries: a modelling study}{AB Hogan, BL Jewell, E Sherrard-Smith, JF Vesga, OJ Watson, C Whittaker, *A Hamlet*, JA Smith, P Winskill, R Verity, M Baguelin, JA Lees, LK Whittles, KEC Ainslie, S Bhatt, A Boonyasiri, NF Brazeau, L Cattarino, LV Cooper, H Coupland, G Cuomo-Dannenburg, A Dighe, BA Djaafara, CA Donnelly, JW Eaton, SLv Elsland, RG FitzJohn, H Fu, KAM Gaythorpe, W Green, DJ Haw, S Hayes, W Hinsley, N Imai, DJ Laydon, TD Mangal, TA Mellan, S Mishra, G Nedjati-Gilani, KV Parag, HA Thompson, HJT Unwin, MAC Vollmer, CE Walters, H Wang, Y Wang, X Xi, NM Ferguson, LC Okell, TS Churcher, N Arinaminpathy, AC Ghani, PGT Walker, TB Hallett}{The Lancet global health}{2020}{}\vspace{-4.0mm}
+    \cventry{Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand. Imperial College COVID-19 Response Team}{NM Ferguson, D Laydon, G Nedjati-Gilani, N Imai, K Ainslie, M Baguelin, S Bhatia, A Boonyasiri, Z Cucunubá, G Cuomo-Dannenburg, A Dighe, I Dorigatti, H Fu, K Gaythorpe, W Green, *A Hamlet*, W Hinsley}{Imperial College COVID-}{2020}{}\vspace{-4.0mm}
+    \cventry{Comparison of molecular testing strategies for COVID-19 control: a mathematical modelling study}{NC Grassly, M Pons-Salort, EPK Parker, PJ White, NM Ferguson, K Ainslie, M Baguelin, S Bhatt, A Boonyasiri, N Brazeau, L Cattarino, H Coupland, Z Cucunuba, G Cuomo-Dannenburg, A Dighe, C Donnelly, SLv Elsland, R FitzJohn, S Flaxman, K Fraser, K Gaythorpe, W Green, *A Hamlet*, W Hinsley, N Imai, E Knock, D Laydon, T Mellan, S Mishra, G Nedjati-Gilani, P Nouvellet, L Okell, M Ragonnet-Cronin, HA Thompson, HJT Unwin, M Vollmer, E Volz, C Walters, Y Wang, OJ Watson, C Whittaker, L Whittles, X Xi}{The Lancet Infectious Diseases}{2020}{}\vspace{-4.0mm}
+    \cventry{The potential public health consequences of COVID-19 on malaria in Africa}{E Sherrard-Smith, AB Hogan, *A Hamlet*, OJ Watson, C Whittaker, P Winskill, F Ali, AB Mohammad, P Uhomoibhi, I Maikore, N Ogbulafor, J Nikau, MD Kont, JD Challenger, R Verity, B Lambert, M Cairns, B Rao, M Baguelin, LK Whittles, JA Lees, S Bhatia, ES Knock, L Okell, HC Slater, AC Ghani, PGT Walker, OO Okoko, TS Churcher}{Nature medicine}{2020}{}\vspace{-4.0mm}
+    \cventry{Evidence of initial success for China exiting COVID-19 social distancing policy after achieving containment}{KEC Ainslie, CE Walters, H Fu, S Bhatia, H Wang, X Xi, M Baguelin, S Bhatt, A Boonyasiri, O Boyd, L Cattarino, C Ciavarella, Z Cucunuba, G Cuomo-Dannenburg, A Dighe, I Dorigatti, SLv Elsland, R FitzJohn, K Gaythorpe, AC Ghani, W Green, *A Hamlet*, W Hinsley, N Imai, D Jorgensen, E Knock, D Laydon, G Nedjati-Gilani, LC Okell, I Siveroni, HA Thompson, HJT Unwin, R Verity, M Vollmer, PGT Walker, Y Wang, OJ Watson, C Whittaker, P Winskill, CA Donnelly, NM Ferguson, S Riley}{Wellcome Open Research}{2020}{}\vspace{-4.0mm}
+    \cventry{Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand. London: Imperial College London; 2020}{NM Ferguson, D Laydon, G Nedjati-Gilani, N Imai, K Ainslie, M Baguelin, S Bhatia, A Boonyasiri, Z Cucunubá, G Cuomo-Dannenburg, A Dighe, I Dorigatti, H Fu, K Gaythorpe, W Green, *A Hamlet*, W Hinsley, LC Okell, Sv Elsland, H Thompson, R Verity, E Volz, H Wang, Y Wang, PG Walker, C Walters, P Winskill, C Whittaker, CA Donnelly, S Riley, AC Ghani}{doi. org/}{2020}{}\vspace{-4.0mm}
+    \cventry{Report 13: Estimating the number of infections and the impact of non-pharmaceutical interventions on COVID-19 in 11 European countries}{NM Ferguson, D Laydon, G Nedjati-Gilani, N Imai, K Ainslie, M Baguelin, S Bhatia, A Boonyasiri, Z Cucunubá, G Cuomo-Dannenburg, A Dighe, I Dorigatti, H Fu, K Gaythorpe, W Green, *A Hamlet*, W Hinsley, LC Okell, SV Elsland, AC Ghani}{Imp. Coll. COVID-}{2020}{}\vspace{-4.0mm}
+    \cventry{on behalf of the Imperial College COVID-19 Response Team}{N Ferguson, A Ghani, W Hinsley, E Volz}{Impact of non-pharmaceutical interventions (NPIs) to reduce COVID}{2020}{}\vspace{-4.0mm}
+    \cventry{The effect of climate change on yellow fever disease burden in Africa}{KAM Gaythorpe, *A Hamlet*, L Cibrelus, T Garske, NM Ferguson}{Elife}{2020}{}\vspace{-4.0mm}
+    \cventry{Eliminating yellow fever epidemics in Africa: vaccine demand forecast and impact modelling}{Kév Jean, *A Hamlet*, J Benzler, L Cibrelus, KAM Gaythorpe, A Sall, NM Ferguson, T Garske}{PLoS neglected tropical diseases}{2020}{}\vspace{-4.0mm}
+    \cventry{SARS-CoV-2 infection prevalence on repatriation flights from Wuhan City, China}{HA Thompson, N Imai, A Dighe, KEC Ainslie, M Baguelin, S Bhatia, S Bhatt, A Boonyasiri, O Boyd, NF Brazeau, L Cattarino, LV Cooper, H Coupland, Z Cucunuba, G Cuomo-Dannenburg, B Djaafara, I Dorigatti, SV Elsland, R FitzJohn, H Fu, KAM Gaythorpe, W Green, T Hallett, *A Hamlet*, D Haw, S Hayes, W Hinsley, B Jeffrey, E Knock, DJ Laydon, J Lees, TD Mangal, T Mellan, S Mishra, A Mousa, G Nedjati-Gilani, P Nouvellet, L Okell, KV Parag, M Ragonnet-Cronin, S Riley, HJT Unwin, R Verity, M Vollmer, E Volz, PGT Walker, C Walters, H Wang, Y Wang, OJ Watson, C Whittaker, LK Whittles, P Winskill, X Xi, CA Donnelly, NM Ferguson}{Journal of travel medicine}{2020}{}\vspace{-4.0mm}
+    \cventry{Report 13: Estimating the number of infections and the impact of non-pharmaceutical interventions on COVID-19 in European countries}{S Flaxman, S Mishra, A Gandy, HJT Unwin, H Coupland}{London, UK: Imperial College COVID Response Team}{2020}{}\vspace{-4.0mm}
+    \cventry{International risk of yellow fever spread from the ongoing outbreak in Brazil, December 2016 to May 2017}{I Dorigatti, *A Hamlet*, R Aguas, L Cattarino, A Cori, CA Donnelly, T Garske, N Imai, NM Ferguson}{Eurosurveillance}{2017}{}\vspace{-4.0mm}
+    \cventry{Risks posed by Reston, the forgotten ebolavirus}{D Cantoni, *A Hamlet*, M Michaelis, MN Wass, JS Rossman}{Msphere}{2016}{}\vspace{-4.0mm}
+>>>>>>> ccdf85fc94cc21de2e350cb6147e76178334b20b:arran_hamlet_CV.tex
+\end{cventries}
+
+
+
+\end{document}
