@@ -192,9 +192,9 @@ pubs %>%
   dplyr::filter(first_author == T & preprint == F) %>%
   dplyr::arrange(desc(year), desc(cites)) %>%
   detailed_entries(
-    what = title,
+    what = author,
     when = as.character(year),
-    with = author,
+    with = title,
     where = journal,
     .protect = TRUE
   )
@@ -217,12 +217,17 @@ name_in_first_couple_papers <- name_in_first_couple[which(name_in_first_couple$r
 #   )
 
 pubs %>%
-    dplyr::filter(first_author == F & preprint == F & journal != "Imperial College London") %>%
+    dplyr::filter(!journal %in% c("doi. org/",
+                                  "Impact of non-pharmaceutical interventions (NPIs) to reduce COVID",
+"Imperial College COVID", 
+"Imperial College London",
+"Imp\\. Coll. COVID-",
+"Imperial College COVID-") & report == F & first_author == F & preprint == F & journal != "Imperial College London") %>%
     dplyr::arrange(desc(year), desc(cites)) %>%
     detailed_entries(
-        what = title,
+        what = author,
         when = as.character(year),
-        with = author,
+        with = title,
         where = journal,
         .protect = TRUE
     )
