@@ -62,6 +62,7 @@ tribble(
  "Postdoctoral Researcher (COVID-19 response)", "Imperial College London", "London, United Kingdom", "Feb 2020-Dec 2020", "Seconded through the Global Outbreak Alert and Response Network to provide technical support for the WHO in Geneva Feb - Apr 2020.",
   
    "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
+    "PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "Explored the role of climate, landcover and zoonotic reservoirs on the distribution of yellow fever in South America. Additional work focussed on estimating the vaccination coverage of yellow fever globally over time.",
  
    "Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Outbreak analysis and response for the 2015-2016 outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO).",
   "Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Responsible for estimating population-level vaccination coverage across Africa and the development of an open-source tool to explore this information. Currently utilised by researchers and the WHO."
