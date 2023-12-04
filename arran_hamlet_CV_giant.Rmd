@@ -45,7 +45,7 @@ tribble(
 
   "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",      
     "\\textbf{Lead on an Epi-Aid investigating the rise in detections of Corynebacterium diphtheriae in Washington state}.
-    \\\\ - Lead, with a fellow Officer based in Public Health Seattle King County, a multidisciplinary team to investigate the increase in C. diphtheriae detections in Washington State, 2018-2023. 
+    \\\\ - Co-lead of a multidisciplinary team from local, state and federal agencies, tasked with investigating the increase in C. diphtheriae detections in Washington State, 2018-2023. 
     \\\\ - Organized meetings and coordination with local health jurisdictions and hospital system partners to gain access to medical records for chart abstraction, and to understand the context of the increases.
     \\\\ - Conducted interviews with laboratory directors to understand changes in testing practices, and with partners providing housing and medical care to those experiencing homelessness.
     \\\\ - Analysis currently ongoing, focusing on changes in transmission and surveillance, the clinical course and social factors related to the increase in detections.",
@@ -73,29 +73,21 @@ tribble(
 ```{r employment1_5}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",
+"", "", "", "",
 "\\textbf{Tuberculosis in the correctional system.}.
-    \\\\ - Part of the WA DOH team, supervising and responding to Tuberculosis in the WA correctional system following the largest outbreak in decades.Provided leadership and analytical support.",
-
-"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",
+    \\\\ - Part of the WA DOH team, supervising and responding to Tuberculosis in the WA correctional system following the largest outbreak in decades. Provided leadership and analytical support.",
+"", "", "", "",
 "\\textbf{Malaria in Uganda and Ethiopia}.
     \\\\ - Working with the CDC malaria group to analyse a study looking at increasing funding to community healthcare workers during 2021-2022, results currently being written up for a manuscript.
-    \\\\ - Leading a body of work with the Presidents Malaria Initiative and PATH to provide subnational estimates of the impact of Anopheles stephensi on malaria transmission in Ethiopia.",
-# ) %>% 
-#   detailed_entries(company, loc, role, dates, details, .protect = F)
-#   
-# ```
-# ```{r employment2}
-# 
-# tribble(
-#   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+    \\\\ - Working with the Presidents Malaria Initiative and PATH to provide subnational estimates of the impact of Anopheles stephensi on malaria transmission in Ethiopia.",
+
 "Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Visiting researcher for mathematical and statistical modelling of malaria and yellow fever.",
-"Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Provide direction and feedback for various projects, review manuscripts and plan strategic research goals.",
+"Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Provide direction and feedback for projects, reviewing manuscripts and planning strategic research goals.",
 
 "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models.
-\\\\ - Several of these outputs were used by organizations such as the WHO, IVCC, MedAccess and various Ministries of Health to understand the potential benefits of different malaria control strategies and the utility of next generation bednets such as Piperonyl butoxide (PBO) or Interceptor® G2 in areas of high insecticide resistance.",
+\\\\ - Several of these outputs were used by organizations such as the WHO, IVCC, MedAccess and Ministries of Health to understand the potential benefits of different malaria control strategies and the utility of next generation bednets such as Piperonyl butoxide (PBO) or Interceptor® G2 in areas of high insecticide resistance.",
 
-"Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Presentation given to the London Malaria Network and results published Nature Medicine as joint first author.",
+"Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.",
 
 "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Lead researcher on a piece of work assessing the potential impact of Anopheles stephensi establishment on malaria transmission in Ethiopia.
 \\\\ - This piece of work was conducted with Abt Associates and the Presidents Malaria Initiative.
@@ -119,7 +111,7 @@ tribble(
 ) %>% 
   detailed_entries(company, loc, role, dates, details, .protect = F)
 ```
-
+\newpage
 # Consultancy
 ```{r consultancy}
 tribble(

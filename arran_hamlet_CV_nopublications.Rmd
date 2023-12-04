@@ -43,7 +43,7 @@ tribble(
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Epidemic Intelligence Service Officer for the state of Washington.",
+  # "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Epidemic Intelligence Service Officer for the state of Washington.",
     "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Primarily working on disease outbreak response, surveillance and policy.",
   "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, United States of America", "July 2022-", "Projects include: Estimating the burden of long COVID in Washington state, Evaluating Tuberculosis and Rabies surveillance systems, Tuberculosis in the correctional system in Washington state, and communicable disease outbreak investigations.",
 
