@@ -37,13 +37,19 @@ tribble(
   detailed_entries(uni, loc, degree, dates, details)
 ```
 
-
 # Employment
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-", "\\textbf{Select projects below.}\\\\",
-  
+
+  "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",      
+    "\\textbf{Lead on an Epi-Aid investigating the rise in detections of Corynebacterium diphtheriae in Washington state}.
+    \\\\ - Lead, with a fellow Officer based in Public Health Seattle King County, a multidisciplinary team to investigate the increase in C. diphtheriae detections in Washington State, 2018-2023. 
+    \\\\ - Organized meetings and coordination with local health jurisdictions and hospital system partners to gain access to medical records for chart abstraction, and to understand the context of the increases.
+    \\\\ - Conducted interviews with laboratory directors to understand changes in testing practices, and with partners providing housing and medical care to those experiencing homelessness.
+    \\\\ - Analysis currently ongoing, focusing on changes in transmission and surveillance, the clinical course and social factors related to the increase in detections.",
+
 "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",      
     "\\textbf{Lead on estimating the prevalence of long COVID in Washington}.
     \\\\ - Created a mathematical model using WA DOH data to estimate age, sex, race-ethnicity, and county level prevalence of long COVID over time. 
@@ -60,24 +66,29 @@ tribble(
 "\\textbf{Evaluation of the rabies surveillance system}.
     \\\\ - Compared existing rabies mandatory reporting with syndromic surveillance collected from emergency departments and urgent care centers on potential rabies exposures, and with recorded post-exposure prophylaxis. 
     \\\\ - Identified clear gaps in certain counties reporting of rabies, with some of these reporting less than 1 in 10 estimated rabies exposures.
-    \\\\ - Currently assessing whether we can use these alternative data systems to capture a more accurate understanding of human-rabies encounters, and remove potential rabies exposure as a notifiable condition.",
+    \\\\ - Currently assessing whether we can use these alternative data systems to capture a more accurate understanding of human-rabies encounters, and remove potential rabies exposure as a notifiable condition.") %>% 
+  detailed_entries(company, loc, role, dates, details, .protect = F)
+```
 
+```{r employment1_5}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
 "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",
 "\\textbf{Tuberculosis in the correctional system.}.
-    \\\\ - Part of the WA DOH team, supervising and responding to Tuberculosis in the WA correctional system following the largest outbreak in decades.
-\\\\ - Provided leadership and analytical support.",
+    \\\\ - Part of the WA DOH team, supervising and responding to Tuberculosis in the WA correctional system following the largest outbreak in decades.Provided leadership and analytical support.",
 
 "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",
 "\\textbf{Malaria in Uganda and Ethiopia}.
     \\\\ - Working with the CDC malaria group to analyse a study looking at increasing funding to community healthcare workers during 2021-2022, results currently being written up for a manuscript.
-    \\\\ - Leading a body of work with the Presidents Malaria Initiative and PATH to provide subnational estimates of the impact of Anopheles stephensi on malaria transmission in Ethiopia.") %>% 
-  detailed_entries(company, loc, role, dates, details, .protect = F)
-```
-
-```{r employment2}
-
-tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+    \\\\ - Leading a body of work with the Presidents Malaria Initiative and PATH to provide subnational estimates of the impact of Anopheles stephensi on malaria transmission in Ethiopia.",
+# ) %>% 
+#   detailed_entries(company, loc, role, dates, details, .protect = F)
+#   
+# ```
+# ```{r employment2}
+# 
+# tribble(
+#   ~ role, ~ company, ~ loc, ~ dates, ~ details,
 "Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Visiting researcher for mathematical and statistical modelling of malaria and yellow fever.",
 "Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Provide direction and feedback for various projects, review manuscripts and plan strategic research goals.",
 
@@ -104,7 +115,6 @@ tribble(
 
 "Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Outbreak analysis and response for the 2015-2016 outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO).\\\\ - This involved rapid modelling and data analytics to answer questions on the spread and suitability of the environment for transmission, and planning vaccination campaign strategies to stop the outbreak.\\\\ - Hired as a consultant to produce a report on strategies for optimally reducing the risk of yellow fever transmission in Africa, and the potential for global spread.",
 "Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Responsible for estimating population-level vaccination coverage across Africa and the development of an open-source tool to explore this information. Currently utilised by researchers and the WHO."
-
 
 ) %>% 
   detailed_entries(company, loc, role, dates, details, .protect = F)
