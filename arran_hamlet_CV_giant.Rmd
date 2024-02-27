@@ -134,9 +134,8 @@ tribble(
 ```{r awards}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-   "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Curriculum designer and creator, lecturer for courses teaching epidemiologists applied R coding.",
 
-  "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Jointly awarded £23,000 with co-PI Natsuko Imai to run a week long training workshop in Rio de Janeiro focusing on the use of mathematical models in outbreak response and policy.",
+    "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Jointly awarded £23,000 with co-PI Natsuko Imai to run a week long training workshop in Rio de Janeiro focusing on the use of mathematical models in outbreak response and policy.",
    "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Course was run collaboratively with the Brazilian Ministry of Health and Fundação Oswaldo Cruz (Fiocruz).",
   
   "MRC Exceptional Training Opportunity", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019", "Oct 2017: Awarded £650 to travel to the WHO in Geneva, Switzerland to present my work on yellow fever and discuss with the yellow fever team how my PhD can provide support for their activities.",

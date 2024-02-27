@@ -1,0 +1,156 @@
+---
+name: Dr Arran Hamlet
+date: "`r format(Sys.time(), '%B, %Y')`"
+position: Epidemic Intelligence Service Officer
+address: "Centers for Disease Control and Prevention, Atlanta, USA"
+aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy."
+email: arranh92@gmail.com
+github: arranhamlet
+linkedin: arranhamlet
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(scholar)
+```
+
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates,
+  "PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'", "Imperial College London", "London, United Kingdom", "Jan 2017-Jan 2020",
+
+  "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "Oct 2014-Oct 2015",
+  
+  "BSc in Biology with Psychology", "Queen Mary University of London", "London, United Kingdom", "Sep 2011-May 2014"
+) %>% 
+  detailed_entries(uni, loc, degree, dates)
+```
+
+# Employment
+
+```{r employment1_5}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+
+    "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-", "Responsible for leading outbreak investigations, designing and conducting epidemiological analysis, evaluating disease surveillance and establishing public health policy.",
+  
+"Visiting Researcher", "Imperial College London", "London, United Kingdom", "Jun 2022-", "Visiting researcher for mathematical and statistical modelling of malaria and yellow fever.",
+
+"Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models.",
+
+"Postdoctoral Researcher (Nigeria COVID-19 response)", "Imperial College London", "London, United Kingdom", "Apr 2020-Dec 2020", "Lead researcher for Imperial College London's data analytics and modelling support for the Nigerian Government.",
+
+"PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.",
+"PhD in Infectious Disease Modelling", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jan 2020", "Explored the role of climate, landcover and zoonotic reservoirs on the distribution of yellow fever in South America.",
+
+"Research Assistant", "Imperial College London", "London, United Kingdom", "Oct 2015 - Dec 2016", "Outbreak analysis and response for the 2015-2016 yellow fever outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO) and investigating the impact of climate on yellow fever transmission."
+
+
+) %>% 
+  detailed_entries(company, loc, role, dates, details, .protect = F)
+```
+\newpage
+# Consultancy
+```{r consultancy}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates,
+  "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", 
+  
+      "Lead author for chapters on data analysis and regression for applied epidemiologists", "AppliedEpi", "Online", "Jan 2022 - ", 
+
+  "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", 
+  
+  "Epidemiologist: Yellow fever", "World Health Organization", "Geneva, Switzerland", "Jul 2016 - Sep 2016",
+  
+  "Epidemiologist", "Ozygen Systems", "London, United Kingdom", "Feb 2016 - Mar 2016"
+  
+) %>% 
+  detailed_entries(company, loc, role, dates)
+```
+
+# Funding awards
+```{r awards}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates,
+  "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", 
+  
+  "MRC Exceptional Training Opportunity (£4,600)", "Imperial College London", "London, United Kingdom", "Oct 2017/Aug 2018/Jun 2019"
+) %>% 
+  detailed_entries(company, loc, role, dates)
+```
+
+# Teaching
+```{r teaching}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates,
+  
+  "Shortcourse co-organiser", "Imperial College London", "London, United Kingdom", "Jan 2021 - Sep 2021",
+  
+  "PhD Assessor", "University of São Paulo", "São Paulo, Brazil", "Oct 2020-Jun 2023", 
+  
+  "MSc Dissertation Supervisor", "Imperial College London", "London, United Kingdom", "May 2020 - Oct 2020",
+  
+  "Graduate Teaching Assistant", "Imperial College London", "London, United Kingdom", "Jan 2017 - Jun 2022",
+  
+  "Shortcourse Demonstrator", "Instituto Nacional De Salud and Pontificia Universidad Javeriana", "Bogota, Colombia", "Jun 2019", 
+ 
+) %>% 
+  detailed_entries(company, loc, role, dates)
+```
+  
+
+# Publications
+```{r publications_load, echo = FALSE, message = FALSE, warning = FALSE, results = FALSE}
+pubs <- scholar::get_publications("xk9BhHUAAAAJ")%>%
+  dplyr::mutate(author = author %>%
+                  as.character,
+                journal = journal %>%
+                  replace(journal %in% "bioRxiv", "BioRxiv") %>%
+                  replace(journal %in% "medRxiv", "MedRxiv"),
+                first_author = case_when(stringr::str_starts(author, "A Hamlet|ATP Hamlet") ~ TRUE,
+                                         TRUE ~ FALSE),
+                preprint = case_when(journal %in% c("bioRxiv", "BioRxiv", "MedRxiv", "medRxiv", "") ~ TRUE,
+                                     TRUE ~ FALSE),
+                report = case_when(stringr::str_starts(title, "Report") ~ TRUE,
+                                   TRUE ~ FALSE)) %>%
+  dplyr::arrange(desc(year), desc(cites))
+
+# pubs <- pubs[-which(pubs$cites == 0 & pubs$year < 2021), ]
+if(any(duplicated(pubs$title))) pubs <- pubs[-which(duplicated(pubs$title)), ]
+pubs <- pubs[!is.na(pubs$year), ]
+
+#Fix journal names
+pubs <- pubs %>%
+  mutate(
+    journal = str_to_title(journal),
+    journal = gsub("Plos", "PLoS", journal),
+    journal = gsub("Bmc", "BMC", journal),
+    journal = case_when(
+    journal == "Bmj" ~ "BMJ",
+    TRUE ~ journal
+  )) %>% filter(!grepl("vol 6, pg e100|Imperial College", title)) %>%
+   dplyr::filter(!journal %in% c("doi. org/",
+                                "Impact of non-pharmaceutical interventions (NPIs) to reduce COVID",
+                                "Imperial College COVID",
+                                "Imperial College London",
+                                "Imp\\. Coll. COVID-",
+                                "Imperial College COVID-") & report == F & preprint == F & journal != "Imperial College London") %>% filter(!grepl("Correction", title)) %>%
+   dplyr::arrange(desc(year), desc(cites)) %>%
+  
+    rowwise() %>%
+  mutate(
+    author = gsub("A Hamlet|ATP Hamlet", "\\\\textcolor{red}{\\\\textbf{A Hamlet}} ", author)
+  )
+
+```
+
+## First author publications - `r pubs %>% dplyr::filter(first_author == T & preprint == F) %>% nrow()`
+## Additional publications - `r pubs %>% dplyr::filter(first_author == F & preprint == F) %>% nrow()`

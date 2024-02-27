@@ -1,0 +1,209 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Dr Arran Hamlet}{}
+
+\position{Epidemic Intelligence Service Officer}
+\address{Centers for Disease Control and Prevention, Atlanta, USA}
+
+\email{\href{mailto:arranh92@gmail.com}{\nolinkurl{arranh92@gmail.com}}}
+\github{arranhamlet}
+\linkedin{arranhamlet}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{Infectious disease epidemiologist and mathematical modeller with
+extensive experience in data analysis and statistical/mechanistic
+modelling to inform outbreak response and public health policy.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {February, 2024}
+    {Dr Arran Hamlet~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'}{Jan 2017-Jan 2020}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Imperial College London}{MSc in Epidemiology}{Oct 2014-Oct 2015}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Queen Mary University of London}{BSc in Biology with Psychology}{Sep 2011-May 2014}{London, United Kingdom}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+\begin{cventries}
+    \cventry{Centers for Disease Control and Prevention}{Epidemic Intelligence Service Officer (Washington State Department of Health)}{July 2022-}{Seattle, USA}{\begin{cvitems}
+\item Responsible for leading outbreak investigations, designing and conducting epidemiological analysis, evaluating disease surveillance and establishing public health policy.
+\end{cvitems}}
+    \cventry{Imperial College London}{Visiting Researcher}{Jun 2022-}{London, United Kingdom}{\begin{cvitems}
+\item Visiting researcher for mathematical and statistical modelling of malaria and yellow fever.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (Malaria)}{Jan 2020-Jun 2022}{London, United Kingdom}{\begin{cvitems}
+\item Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (Nigeria COVID-19 response)}{Apr 2020-Dec 2020}{London, United Kingdom}{\begin{cvitems}
+\item Lead researcher for Imperial College London's data analytics and modelling support for the Nigerian Government.
+\end{cvitems}}
+    \cventry{Imperial College London}{PhD in Infectious Disease Modelling}{Jan 2017 - Jan 2020}{London, United Kingdom}{\begin{cvitems}
+\item PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.
+\item Explored the role of climate, landcover and zoonotic reservoirs on the distribution of yellow fever in South America.
+\end{cvitems}}
+    \cventry{Imperial College London}{Research Assistant}{Oct 2015 - Dec 2016}{London, United Kingdom}{\begin{cvitems}
+\item Outbreak analysis and response for the 2015-2016 yellow fever outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO) and investigating the impact of climate on yellow fever transmission.
+\end{cvitems}}
+\end{cventries}
+\newpage
+
+\hypertarget{consultancy}{%
+\section{Consultancy}\label{consultancy}}
+
+\begin{cventries}
+    \cventry{AppliedEpi}{Course Instructor and Curriculum Designer}{Jan 2022 - }{Online}{}\vspace{-4.0mm}
+    \cventry{AppliedEpi}{Lead author for chapters on data analysis and regression for applied epidemiologists}{Jan 2022 - }{Online}{}\vspace{-4.0mm}
+    \cventry{World Health Organization}{Epidemiologist: COVID-19}{Feb 2020 - Apr 2020}{Geneva, Switzerland}{}\vspace{-4.0mm}
+    \cventry{World Health Organization}{Epidemiologist: Yellow fever}{Jul 2016 - Sep 2016}{Geneva, Switzerland}{}\vspace{-4.0mm}
+    \cventry{Ozygen Systems}{Epidemiologist}{Feb 2016 - Mar 2016}{London, United Kingdom}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{funding-awards}{%
+\section{Funding awards}\label{funding-awards}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{MRC Pump Priming (£23,000)}{Nov 2019}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Imperial College London}{MRC Exceptional Training Opportunity (£4,600)}{Oct 2017/Aug 2018/Jun 2019}{London, United Kingdom}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{Shortcourse co-organiser}{Jan 2021 - Sep 2021}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{University of São Paulo}{PhD Assessor}{Oct 2020-Jun 2023}{São Paulo, Brazil}{}\vspace{-4.0mm}
+    \cventry{Imperial College London}{MSc Dissertation Supervisor}{May 2020 - Oct 2020}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Imperial College London}{Graduate Teaching Assistant}{Jan 2017 - Jun 2022}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Instituto Nacional De Salud and Pontificia Universidad Javeriana}{Shortcourse Demonstrator}{Jun 2019}{Bogota, Colombia}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{first-author-publications---6}{%
+\subsection{First author publications -
+6}\label{first-author-publications---6}}
+
+\hypertarget{additional-publications---32}{%
+\subsection{Additional publications -
+32}\label{additional-publications---32}}
+
+
+
+\end{document}
