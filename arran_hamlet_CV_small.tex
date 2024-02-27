@@ -1,0 +1,279 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Dr Arran Hamlet}{}
+
+\position{Epidemic Intelligence Service Officer}
+\address{Centers for Disease Control and Prevention, Atlanta, USA}
+
+\email{\href{mailto:arranh92@gmail.com}{\nolinkurl{arranh92@gmail.com}}}
+\github{arranhamlet}
+\linkedin{arranhamlet}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{Infectious disease epidemiologist and mathematical modeller with
+extensive experience in data analysis and statistical/mechanistic
+modelling to inform outbreak response and public health policy.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {February, 2024}
+    {Dr Arran Hamlet~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{PhD titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'}{Jan 2017-Jan 2020}{London, United Kingdom}{\begin{cvitems}
+\item Looked at understanding the epidemiology of yellow fever across South America, with a focus on Brazil, examining the roles of climate, environment and host. Employed a variety of statistical and mechanistic modelling techniques. Worked with the WHO, the Brazilian Ministry of Health and the university Fundação Oswaldo Cruz.
+\end{cvitems}}
+    \cventry{Imperial College London}{MSc in Epidemiology}{Oct 2014-Oct 2015}{London, United Kingdom}{\begin{cvitems}
+\item Awarded a distinction for my dissertation project titled 'The Seasonality of Yellow Fever in Africa.'
+\end{cvitems}}
+    \cventry{Queen Mary University of London}{BSc in Biology with Psychology}{Sep 2011-May 2014}{London, United Kingdom}{\begin{cvitems}
+\item Focus on Evolutionary Biology and Neuroscience.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+\begin{cventries}
+    \cventry{Centers for Disease Control and Prevention}{Epidemic Intelligence Service Officer (Washington State Department of Health)}{July 2022-}{Seattle, USA}{\begin{cvitems}
+\item \textbf{Select projects below.}\\
+\item \textbf{Lead on an Epi-Aid investigating the rise in detections of Corynebacterium diphtheriae in Washington state}.
+\item \Lead on estimating the prevalence of long COVID in Washington using a mathematical model to estimate age, sex, race-ethnicity, and county level prevalence of long COVID over time
+\item \Lead on an outbreak investigation of gastrointestinal illness on the Pacific Crest Trail}.
+    \\ - Lead the outbreak investigation and response. This included, survey design, patient interviews, epidemiological analysis and environmental sampling of pit latrines and shared use facilities.
+\item \Evaluation of the rabies surveillance system, comparing existing rabies mandatory reporting with syndromic surveillance collected from emergency departments and urgent care centers.
+\end{cvitems}}
+\end{cventries}
+
+\begin{cventries}
+    \cventry{}{}{}{}{\begin{cvitems}
+\item \Part of the WA DOH team, supervising and responding to Tuberculosis in the WA correctional system following the largest outbreak in decades. Provided leadership and analytical support..
+\item \Working on various projects with the CDC malaria group and the Presidents Malaria Initiative.
+\end{cvitems}}
+    \cventry{Imperial College London}{Visiting Researcher}{Jun 2022-}{London, United Kingdom}{\begin{cvitems}
+\item Visiting researcher for mathematical and statistical modelling of malaria and yellow fever.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (Malaria)}{Jan 2020-Jun 2022}{London, United Kingdom}{\begin{cvitems}
+\item Involved in a variety of projects assessing the public health impact of various control measures on the burden of malaria across Africa using mechanistic transmission models.
+\item Lead researcher on a piece of work assessing the potential impact of Anopheles stephensi establishment on malaria transmission in Ethiopia.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (Nigeria COVID-19 response)}{Apr 2020-Dec 2020}{London, United Kingdom}{\begin{cvitems}
+\item Lead researcher for Imperial College London's data analytics and modelling support for the Nigerian Government.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher (COVID-19 response)}{Feb 2020-Dec 2020}{London, United Kingdom}{\begin{cvitems}
+\item Seconded through the Global Outbreak Alert and Response Network to provide analytical support for the WHO in Geneva Feb - Apr 2020 to understand the initial spread of COVID-19.
+\end{cvitems}}
+    \cventry{Imperial College London}{PhD in Infectious Disease Modelling}{Jan 2017 - Jan 2020}{London, United Kingdom}{\begin{cvitems}
+\item PhD thesis titled 'Yellow fever in South America: The role of environment and host on transmission dynamics'.
+\item Explored the role of climate, landcover and zoonotic reservoirs on the distribution of yellow fever in South America. Additional work focussed on estimating the vaccination coverage of yellow fever globally over time.
+\end{cvitems}}
+    \cventry{Imperial College London}{Research Assistant}{Oct 2015 - Dec 2016}{London, United Kingdom}{\begin{cvitems}
+\item Outbreak analysis and response for the 2015-2016 outbreak in Angola and the Democratic Republic of the Congo working with the World Health Organization (WHO).
+\item Responsible for estimating population-level vaccination coverage across Africa and the development of an open-source tool to explore this information.
+\end{cvitems}}
+\end{cventries}
+\newpage
+
+\hypertarget{consultancy}{%
+\section{Consultancy}\label{consultancy}}
+
+\begin{cventries}
+    \cventry{AppliedEpi}{Course Instructor and Curriculum Designer}{Jan 2022 - }{Online}{\begin{cvitems}
+\item AppliedEpi is the non-profit behind the Epidemiologist R Handbook, used by almost 2 million epidemiologists worldwide. Since early 2022 they have offered courses teaching applied R coding to epidemiologists, running over a hundred courses for dozens of Ministries of Health globally as well as the WHO, CDC and various other institutions.
+\item Designed and created numerous modules and the Advanced Statistics in R course.
+\item I have lead or demonstrated on courses for almost a dozen agencies, including the Health Departments for Michigan, Wales, Canada, Camobdia, Kazakhstan.
+\item Currently lead author responsible for a team of epidemiologists writing chapters of data analysis and regression in a field manual for applied epidemiologists.
+\end{cvitems}}
+    \cventry{World Health Organization}{Epidemiologist: COVID-19}{Feb 2020 - Apr 2020}{Geneva, Switzerland}{\begin{cvitems}
+\item Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment
+\end{cvitems}}
+    \cventry{World Health Organization}{Epidemiologist: Yellow fever}{Jul 2016 - Sep 2016}{Geneva, Switzerland}{\begin{cvitems}
+\item Commissioned to produce a report evaluating the risk of outbreaks of yellow fever across Africa as a result of ongoing transmission in Angola and the Democratic Republic of the Congo and the potential for introduction into Asia.
+\end{cvitems}}
+    \cventry{Ozygen Systems}{Epidemiologist}{Feb 2016 - Mar 2016}{London, United Kingdom}{\begin{cvitems}
+\item Hired to produce a report on numerous pathogens involved in nosocomial infection and to evaluate the applicability of ozone decontamination technology in UK healthcare settings to limit their spread.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{funding-awards}{%
+\section{Funding awards}\label{funding-awards}}
+
+\begin{cventries}
+    \cventry{AppliedEpi}{Course Instructor and Curriculum Designer}{Jan 2022 - }{Online}{\begin{cvitems}
+\item Curriculum designer and creator, lecturer for courses teaching epidemiologists applied R coding.
+\end{cvitems}}
+    \cventry{Imperial College London}{MRC Pump Priming (£23,000)}{Nov 2019}{London, United Kingdom}{\begin{cvitems}
+\item Jointly awarded £23,000 with co-PI Natsuko Imai to run a week long training workshop in Rio de Janeiro focusing on the use of mathematical models in outbreak response and policy.
+\end{cvitems}}
+    \cventry{Imperial College London}{MRC Exceptional Training Opportunity}{Oct 2017/Aug 2018/Jun 2019}{London, United Kingdom}{\begin{cvitems}
+\item Oct 2017: Awarded £4600 in several different awards to present results to the WHO, PAHO and the Brazilian Ministry of Health travel, as well as to help run a workshop on an introduction to ifnectious disease modelling at a university in Bogota, Colombia.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\begin{cventries}
+    \cventry{Imperial College London}{Shortcourse co-organiser}{Jan 2021 - Sep 2021}{London, United Kingdom}{\begin{cvitems}
+\item Co-organiser on the departments 'Mathematical modelling for the control of infectious diseases' short course, run since 1990 and designed to teach pubic health professionals about infectious disease modelling.
+\item Responsible for helping redesign, and restructure, the course in order to deliver it fully online in light of the ongoing COVID-19 pandemic.
+\end{cvitems}}
+    \cventry{University of São Paulo}{PhD Assessor}{Oct 2020-Jun 2023}{São Paulo, Brazil}{\begin{cvitems}
+\item Examining progress and assisting with the research of a PhD student's project titled 'Spatio-temporal dynamics of yellow fever in Brazil'.
+\end{cvitems}}
+    \cventry{Imperial College London}{MSc Dissertation Supervisor}{May 2020 - Oct 2020}{London, United Kingdom}{\begin{cvitems}
+\item Designed and supervised MSc Epidemiology projects looking at the effect of forest fragmentation on yellow fever in Southern Brazil, and exploring the differences in transmission dynamics between yellow fever, dengue and zika.
+\end{cvitems}}
+    \cventry{Imperial College London}{Graduate Teaching Assistant}{Jan 2017 - Jun 2022}{London, United Kingdom}{\begin{cvitems}
+\item Teaching assistant and demonstrator for numerous modules on infectious disease modelling, statistical analysis and epidemiology.
+\end{cvitems}}
+    \cventry{Imperial College London}{Shortcourse Demonstrator}{Jun 2019}{Bogota, Colombia}{\begin{cvitems}
+\item Demonstrator and lecturer on a course coordinated between Imperial College London, Instituto Nacional De Salud and Pontificia Universidad Javeriana Bogota which aimed to give an introduction to infectious disease modelling.
+\end{cvitems}}
+    \cventry{Imperial College London}{Shortcourse Demonstrator}{Sep 2017/Sep 2018/Sep 2019}{London, United Kingdom}{\begin{cvitems}
+\item Demonstrator on numerous practical exercises and lectures on data analysis and infectious disease modelling on the aformentioned departments 'Mathematical modelling for the control of infectious diseases' short course.
+\end{cvitems}}
+    \cventry{Imperial College London}{Design and implementation of an online platform for teaching infectious disease modelling}{Jan 2019 - Sept 2019}{London, United Kingdom}{\begin{cvitems}
+\item Responsible for liasing between programming team and course organisers to design and translate existing work. Highly successful implementation led to the platform being adopted for use in future shorecourses and the MSc Epidemiology at Imperial College London
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\begin{cventries}
+    \cventry{Western States Modeling Symposium}{Estimating the Burden and Distribution of Long COVID in Washington State}{Sep 2023}{Virtual}{}\vspace{-4.0mm}
+    \cventry{EIS Conference 2023 and CSTE 2023}{Gastrointestinal illness among hikers on the Washington State Pacific Crest Trail, August–October 2022.}{Apr 2023}{USA}{}\vspace{-4.0mm}
+    \cventry{London Malaria Network}{The potential public health consequences of COVID-19 on malaria in Africa}{Oct 2020}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{American Society of Tropical Medicine and Hygiene}{Seasonality of agricultural exposure more important than seasonality of climate for predicting yellow fever transmission in Brazil}{Nov 2019}{National Harbor, USA}{}\vspace{-4.0mm}
+    \cventry{Outbreak Analysis and Modelling for Public Health}{Statistical and mathematical modelling of yellow fever in South America}{Jun 2019}{Bogota, Colombia}{}\vspace{-4.0mm}
+    \cventry{International Conference on One Medicine One Science}{Land-use,  vegetation  and  habitat fragmentation  as  drivers  of  yellow  fever  transmission  in  South America}{Feb 2019}{Chiang Mai, Thailand}{}\vspace{-4.0mm}
+    \cventry{Yellow fever forecasting: Embedding   modelling in lessons learnt exercises}{Yellow fever in Brazil - Modelling as a tool to inform outbreak response and public health policy}{Nov 2018}{Brasilia, Brazil}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{first-author-publications---6}{%
+\subsection{First author publications -
+6}\label{first-author-publications---6}}
+
+\hypertarget{additional-publications---32}{%
+\subsection{Additional publications -
+32}\label{additional-publications---32}}
+
+
+
+\end{document}
