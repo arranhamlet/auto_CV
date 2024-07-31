@@ -273,6 +273,8 @@ pubs %>%
                                 "Impact of non-pharmaceutical interventions (NPIs) to reduce COVID",
                                 "Imperial College COVID", 
                                 "Imperial College London",
+                                "Tech. Rep. Imperial College London",
+                                "Europe Pmc Free Article",
                                 "Imp\\. Coll. COVID-",
                                 "Imperial College COVID-") & report == F & first_author == F & preprint == F & journal != "Imperial College London") %>%
   dplyr::arrange(desc(year), desc(cites)) %>%
