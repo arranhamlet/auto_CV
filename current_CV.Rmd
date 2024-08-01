@@ -40,43 +40,39 @@ tribble(
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-", "\\textbf{Select projects below.}\\\\",
+  "Senior Service Fellow ", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2024-", "Working within the Center for Forecasting and Outbreak Analytics's INFORM division.",
+  
+  "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024", "\\textbf{Select projects below.}\\\\",
 
-  "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",      
+  "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024",      
     "\\textbf{Lead on an Epi-Aid investigating the rise in detections of Corynebacterium diphtheriae in Washington state}.
     \\\\ - Co-lead of a multidisciplinary team from local, state and federal agencies, tasked with investigating the increase in C. diphtheriae detections in Washington State, 2018-2023. 
     \\\\ - Organized meetings and coordination with local health jurisdictions and hospital system partners to gain access to medical records for chart abstraction, and to understand the context of the increases.
     \\\\ - Conducted interviews with laboratory directors to understand changes in testing practices, and with partners providing housing and medical care to those experiencing homelessness.
     \\\\ - Analysis currently ongoing, focusing on changes in transmission and surveillance, the clinical course and social factors related to the increase in detections.",
 
-"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",      
+"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024",      
     "\\textbf{Lead on estimating the prevalence of long COVID in Washington}.
     \\\\ - Created a mathematical model using WA DOH data to estimate age, sex, race-ethnicity, and county level prevalence of long COVID over time. 
     \\\\ - The method was designed and validated with subject matter experts from WA DOH and the CDC to produce a highly flexible approach that integrated existing data sources with the latest findings from scientific literature.
     \\\\ - Results presented to CSTE, WA DOH leadership, and used in discussions with the Washington State Senate for long COVID advocacy and the positioning of resources.
     \\\\ - Manuscript under review and the approach is highlighted in a CSTE position paper.",
 
-"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-",
+"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024",
 "\\textbf{Lead on an outbreak investigation of gastrointestinal illness on the Pacific Crest Trail}.
     \\\\ - Lead the outbreak investigation and response. This included, survey design, patient interviews, epidemiological analysis and environmental sampling of pit latrines and shared use facilities.
-    \\\\ - The findings led to changes in WA DOH policy on the use of social media in outbreak investigation, a MMWR article was published and presentations given at EIS and CSTE conferences.",
-
-"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-", 
-"\\textbf{Evaluation of the rabies surveillance system}.
-    \\\\ - Compared existing rabies mandatory reporting with syndromic surveillance collected from emergency departments and urgent care centers on potential rabies exposures, and with recorded post-exposure prophylaxis. 
-    \\\\ - Identified clear gaps in certain counties reporting of rabies, with some of these reporting less than 1 in 10 estimated rabies exposures.
-    \\\\ - Currently assessing whether we can use these alternative data systems to capture a more accurate understanding of human-rabies encounters, and remove potential rabies exposure as a notifiable condition.") %>% 
+    \\\\ - The findings led to changes in WA DOH policy on the use of social media in outbreak investigation, a MMWR article was published and presentations given at EIS and CSTE conferences."
+) %>% 
   detailed_entries(company, loc, role, dates, details, .protect = F)
 ```
 
 ```{r employment1_5}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-"", "", "", "",
+"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024",
 "\\textbf{Tuberculosis in the correctional system.}.
     \\\\ - Part of the WA DOH team, supervising and responding to Tuberculosis in the WA correctional system following the largest outbreak in decades. Provided leadership and analytical support.",
-"", "", "", "",
-"\\textbf{Malaria in Uganda and Ethiopia}.
+"Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024","\\textbf{Malaria in Uganda and Ethiopia}.
     \\\\ - Working with the CDC malaria group to analyse a study looking at increasing funding to community healthcare workers during 2021-2022, results currently being written up for a manuscript.
     \\\\ - Working with the Presidents Malaria Initiative and PATH to provide subnational estimates of the impact of Anopheles stephensi on malaria transmission in Ethiopia.",
 
@@ -115,11 +111,11 @@ tribble(
 ```{r consultancy}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "AppliedEpi is the non-profit behind the Epidemiologist R Handbook, used by almost 2 million epidemiologists worldwide. Since early 2022 they have offered courses teaching applied R coding to epidemiologists, running over a hundred courses for dozens of Ministries of Health globally as well as the WHO, CDC and various other institutions.",
+  "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "AppliedEpi is the non-profit behind the Epidemiologist R Handbook, used by almost 3 million epidemiologists worldwide. Since early 2022 they have offered courses teaching applied R coding to epidemiologists, running over a hundred courses for dozens of Ministries of Health globally as well as the WHO, CDC and various other institutions.",
     "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "I was responsible for designing and creating several of the modules on data management and analysis, as well as the sole designer and creator of the Advanced Statistics in R course.",
-      "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "I have lead or demonstrated on courses for almost a dozen agencies, including the Health Departments for Michigan, Wales, Canada, Camobdia, Kazakhstan.",
-      "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Currently lead author responsible for a team of epidemiologists writing chapters of data analysis and regression in a field manual for applied epidemiologists.",
-
+      "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "I have lead or demonstrated on courses for almost a dozen agencies, including the US CDC, WHO, and health departments for numerous US states, Wales, Canada, Camobdia, Kazakhstan.",
+      "Course Instructor and Curriculum Designer", "AppliedEpi", "Online", "Jan 2022 - ", "Currently lead author and editor, responsible for a team of epidemiologists writing chapters on data analysis, regression, and outbreak investigation, in a field manual for applied epidemiologists.",
+  
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Provided technical support for the WHO in the Health Emergency Information and Risk Assessment (HIM) pillar through GOARN deployment",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Work involved exploring and quantifying mortality, transmission and country specific impacts through data analysis and visualisation in real time as the COVID-19 pandemic unfolded. Aspects of data visualisation acknowledged in https://worldhealthorg.shinyapps.io/covid/.",
   "Epidemiologist: COVID-19", "World Health Organization", "Geneva, Switzerland", "Feb 2020 - Apr 2020", "Continued to provide adhoc support till Dec 2020.",
