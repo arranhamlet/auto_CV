@@ -1,8 +1,8 @@
 ---
 name: Dr Arran Hamlet
 date: "`r format(Sys.time(), '%B, %Y')`"
-position: Epidemic Intelligence Service Officer
-address: "Centers for Disease Control and Prevention, Atlanta, USA"
+position: Senior Service Fellow
+address: "Centers for Disease Control and Prevention"
 aboutme: "Infectious disease epidemiologist and mathematical modeller with extensive experience in data analysis and statistical/mechanistic modelling to inform outbreak response and public health policy."
 email: arranh92@gmail.com
 github: arranhamlet
@@ -40,7 +40,7 @@ tribble(
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Senior Service Fellow ", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2024-", "Working within the Center for Forecasting and Outbreak Analytics's INFORM division.",
+  "Senior Service Fellow ", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2024-", "Working within the Center for Forecasting and Outbreak Analytics's INFORM division as the liason between the CDC's modeling work and State, Tribal, Local, and Territorial Health Departments. Primarily working on the estimation of time-varying effective reproductive number, and wastewater informed forecasting for influenza and COVID-19.",
   
   "Epidemic Intelligence Service Officer (Washington State Department of Health)", "Centers for Disease Control and Prevention", "Seattle, USA", "July 2022-July 2024", "\\textbf{Select projects below.}\\\\",
 
@@ -84,7 +84,7 @@ tribble(
 
 "Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Assessed the impact of disruption caused by the SARS-CoV-2 pandemic on malaria control across Africa. Results published Nature Medicine as joint first author.",
 
-"Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Lead researcher on a piece of work assessing the potential impact of Anopheles stephensi establishment on malaria transmission in Ethiopia.
+"Postdoctoral Researcher (Malaria)", "Imperial College London", "London, United Kingdom", "Jan 2020-Jun 2022", "Lead researcher on a piece of work assessing the potential economic and disease burden impact of Anopheles stephensi establishment on malaria transmission in Ethiopia.
 \\\\ - This piece of work was conducted with Abt Associates and the Presidents Malaria Initiative.
 \\\\ - The findings were published in BMC Medicine, and have been widely cited by the WHO and PMI in their advocacy work.",
 
@@ -125,10 +125,13 @@ tribble(
   detailed_entries(company, loc, role, dates, details)
 ```
 
-# Funding awards
+# Funding and awards
 ```{r awards}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Inagural Research Paper of the Year", "Preventing Chronic Disease", "", "October 2024", "Awarded the journal Preventing Chronic Disease's, inagural 'Research Paper of the Year' award for my paper 'Estimating the Burden and Distribution of Post–COVID‑19 Condition in Washington State,
+March 2020–October 2023'.",
+  
   "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Jointly awarded £23,000 with co-PI Natsuko Imai to run a week long training workshop in Rio de Janeiro focusing on the use of mathematical models in outbreak response and policy.",
    "MRC Pump Priming (£23,000)", "Imperial College London", "London, United Kingdom", "Nov 2019", "Course was run collaboratively with the Brazilian Ministry of Health and Fundação Oswaldo Cruz (Fiocruz).",
   
