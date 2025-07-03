@@ -45,8 +45,8 @@ Infectious disease epidemiologist with 9+ years of experience in integrated dise
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   
-  "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Developed mathematical models for the Jameel Institute’s Realtime Intelligent Support for Emergencies initiative to assess vaccine-preventable outbreak risks in conflict settings.",
-   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "The project delivers critical data to help humanitarian organizations and policymakers prioritize aid in crisis settings.",
+  "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Developing mathematical models for the Jameel Institute’s Realtime Intelligent Support for Emergencies initiative to assess vaccine-preventable outbreak risks in conflict settings.",
+   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontière. The project delivers critical data to help humanitarian organizations and policymakers prioritize aid in crisis settings.",
   
   "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Provided technical assistance to US states and territories using CDC forecasting and data tools; coordinated collaborations with public health agencies in Canada and the European Union.",
  "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Designed and carried out surveillance system evaluations for rabies, tuberculosis and long COVID prevalence. Emphasized innovative methods and alternative data systems to improve health security for Washington State's 8 million residents.",
