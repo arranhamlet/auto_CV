@@ -192,7 +192,7 @@ tribble(
 
 # Publications
 ```{r publications_load, echo = FALSE, message = FALSE, warning = FALSE, results = FALSE}
-pubs <- scholar::get_publications("xk9BhHUAAAAJ")%>%
+pubs <- scholar::get_publications(id = "xk9BhHUAAAAJ") %>%
   dplyr::mutate(author = author %>%
                   as.character,
                 journal = journal %>%

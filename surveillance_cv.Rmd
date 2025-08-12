@@ -23,14 +23,14 @@ library(scholar)
 
 # Summary of expertise
 
-Infectious disease epidemiologist with 9+ years of experience in integrated disease surveillance, outbreak response, public health policy and research project management. Extensive global expertise in zoonotic diseases, One Health, and statistical/mathematical modeling to inform strategic interventions. Proven leadership in managing multi-sectoral teams and aligning programs with global frameworks. Adept at developing sustainable, localized solutions for epidemic and pandemic-prone diseases.
+Infectious disease epidemiologist with 9+ years of experience in integrated disease surveillance, outbreak response, public health policy and research project management. Extensive global expertise in zoonotic diseases, One Health, and statistical/mathematical modelling to inform strategic interventions. Proven leadership in managing multi-sectoral teams and aligning programs with global frameworks. Adept at developing sustainable, localized solutions for epidemic and pandemic-prone diseases.
 
 # Key Competencies
 
 * One Health Approach: Addressing human, animal, and environmental health intersections.
 * Leadership: Supervising technical teams in outbreak response, capacity-building, and policy alignment.
 * Communication and Advocacy: Delivered technical insights to guide public health interventions and inform government strategies.
-* Data Analytics and Modeling: Utilizing statistical and mathematical models for outbreak response and health security policy to ensure data-driven results.
+* Data Analytics and modelling: Utilising statistical and mathematical models for outbreak response and health security policy to ensure data-driven results.
 * Global Health Partnerships: Provided relationship management on collaborations with diverse partners in academia, the WHO, CDC, Ministries of Health, and USAID.
 
 # Leadership and management
@@ -38,15 +38,15 @@ Infectious disease epidemiologist with 9+ years of experience in integrated dise
 * Experience leading and supervising multidisciplinary teams for outbreak response and infectious disease surveillance.
 * Led teams to investigate an outbreak of *Corynebacterium diphtheriae* and gastrointestinal illness among vulnerable and hard to reach populations.
 * Managed cross-sector collaborations and provided technical support for policy decisions on malaria control in Ethiopia, COVID-19 transmission in Nigeria and yellow fever outbreaks in Brazil.
-* Organized international collaborations with the US CDC, WHO, and Ministries of Health.
+* Organised international collaborations with the US CDC, WHO, and Ministries of Health.
 
 # Professional experience
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  
+
   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Developing mathematical models for the Jameel Institute’s Realtime Intelligent Support for Emergencies initiative to assess vaccine-preventable outbreak risks in conflict settings.",
-   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontière. The project delivers critical data to help humanitarian organizations and policymakers prioritize aid in crisis settings.",
+   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontière. The project delivers critical data to help humanitarian organisations and policymakers prioritize aid in crisis settings.",
   
   "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Provided technical assistance to US states and territories using CDC forecasting and data tools; coordinated collaborations with public health agencies in Canada and the European Union.",
  "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Designed and carried out surveillance system evaluations for rabies, tuberculosis and long COVID prevalence. Emphasized innovative methods and alternative data systems to improve health security for Washington State's 8 million residents.",
@@ -55,8 +55,8 @@ tribble(
    "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Collaborated with dozens of CDC, state and local public health, and international partners to strengthen surveillance systems for priority diseases.",
 
 
- "Postdoctoral Researcher (Malaria, COVID-19 and Yellow Fever)", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Directed epidemiological modeling for malaria, COVID-19, and yellow fever to guide policy recommendations for Ministries of Health in Brazil, Nigeria, Ethiopia, and global organizations such as the WHO, CDC and USAID.",
-  "Postdoctoral Researcher (Malaria, COVID-19 and Yellow Fever)", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Designed and impemented statistical and mathematical models to predict yellow fever spillover and the potential impact of invasive malaria vectors, published work in high-impact journals like Nature Communications and BMC Medicine.",
+ "Postdoctoral Researcher (Malaria, COVID-19 and Yellow Fever)", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Directed epidemiological modelling for malaria, COVID-19, and yellow fever to guide policy recommendations for Ministries of Health in Brazil, Nigeria, Ethiopia, and global organisations such as the WHO, CDC and USAID.",
+  "Postdoctoral Researcher (Malaria, COVID-19 and Yellow Fever)", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Designed and implemented statistical and mathematical models to predict yellow fever spillover and the potential impact of invasive malaria vectors, published work in high-impact journals like Nature Communications and BMC Medicine.",
  "Postdoctoral Researcher (Malaria, COVID-19 and Yellow Fever)", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Led development of tools for integrated vector control strategies for combatting malaria in Sub-Saharan Africa.",
  
  
@@ -64,7 +64,7 @@ tribble(
   "Consultant and Course Designer", "AppliedEpi", "Remote", "Jan 22-Present", "Authored chapters on data analysis and epidemiology for field manuals used by public health practitioners.",
  
     "Epidemiologist (COVID-19 and Yellow Fever Response)", "World Health Organization", "Remote and Geneva, Switzerland", "Jan 15-Sep 15 and Jan 20-Apr 20", "Provided analytical support for IHR-aligned surveillance during the COVID-19 pandemic in LMICs.",
-    "Epidemiologist (COVID-19 and Yellow Fever Response)", "World Health Organization", "Geneva, Switzerland", "Jan 15-Sep 15 and Jan 20-Apr 20", "Produced operational guidelines for outbreak response, with a focus on epidemiological drivers and transmission potential in Brazil, Angola and the Democratic Republic of the Congo."
+    "Epidemiologist (COVID-19 and Yellow Fever Response)", "World Health Organization", "Remote and Geneva, Switzerland", "Jan 15-Sep 15 and Jan 20-Apr 20", "Produced rapid epidemiological analysis and operational guidelines for outbreak response, with a focus on epidemiological drivers and transmission potential in Angola and the Democratic Republic of the Congo."
  
 ) %>% 
   detailed_entries(company, loc, role, dates, details, .protect = F)
@@ -199,7 +199,7 @@ other_author_number <- name_in_first_couple_papers %>% nrow()
 Presented results of outbreak investigations, scientific analysis and data analytical approaches at over a dozen international conferences, meetings and workshops. 
 
 * Authored 7 first-author publications and over 30 co-authored articles in peer-reviewed journals, including Nature Medicine and BMC Medicine.
-* Topics include zoonotic disease surveillance, modeling infectious disease dynamics, and health security.
+* Topics include zoonotic disease surveillance, modelling infectious disease dynamics, and health security.
 
 For a full list of publications, please see my [<span style="color: red">**Google Scholar profile**</span>](https://scholar.google.co.uk/citations?user=xk9BhHUAAAAJ&hl=en).
 
