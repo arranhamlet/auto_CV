@@ -1,0 +1,182 @@
+---
+name: Dr Arran Hamlet
+date: "`r format(Sys.time(), '%B %Y')`"
+position: Infectious Disease Surveillance Lead
+address: "PATH"
+email: arranh92@gmail.com
+github: arranhamlet
+linkedin: arranhamlet
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+header-includes:
+    - \usepackage {hyperref}
+    - \hypersetup {colorlinks = true, linkcolor = blue, urlcolor = red}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(scholar)
+```
+
+# Summary of expertise
+
+Infectious disease epidemiologist with over ten years in integrated disease surveillance, outbreak response and health security policy. Currently accountable for PATH's delivery of infectious disease surveillance under STRIDES, a US Department of State-funded programme operating in 36 countries with an annual operating budget of approximately US\$19 million and some 40 full-time staff. Doctoral training in mathematical and statistical modelling, applied across IHR-aligned surveillance systems, filovirus and arbovirus outbreak response, and the financing and policy environment that determines whether detection capacity endures.
+
+# Key competencies
+
+* **Health security and biosecurity**: IHR-aligned surveillance, detection and notification thresholds, event-based and genomic surveillance, and the policy and financing architecture that sustains them.
+* **Programme leadership**: full technical, financial and operational accountability for a 36-country detection programme; seven global and regional leads reporting directly; multidisciplinary teams built and supervised across six regions.
+* **Outbreak response**: led investigations and response operations spanning filovirus disease, diphtheria, invasive Group A *Streptococcus*, gastrointestinal illness, yellow fever and COVID-19.
+* **Modelling and analytics**: statistical and mathematical models for outbreak risk, spillover prediction and surveillance system evaluation, used to inform ministry and agency decisions.
+* **Partnerships and advocacy**: WHO, US CDC, ministries of health, US Government donors and academic partners; briefings delivered at executive and board level.
+* **One Health**: addressing human, animal and environmental health intersections in surveillance design and zoonotic risk assessment.
+
+# Professional experience
+```{r employment}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Infectious Disease Surveillance Lead for PATH's Epidemic Preparedness and Response initiative, and project lead for PATH's work on STRIDES (Strengthening Infectious Disease Detection Systems): a US Department of State-funded programme led by FHI 360, operating in 36 countries across six regions, in which PATH holds the lead for infectious disease surveillance and health information systems.",
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Hold overall accountability for PATH's technical, financial and operational delivery, against an annual operating budget of approximately US\\$19 million. Seven global and regional leads report to me directly, above a structure of some 40 full-time PATH staff.",
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "PATH's first full-time hire on the programme, carrying it from design into implementation: setting the surveillance strategy, building government and partner relationships, writing the workplans and recruiting the team while delivering against country commitments.",
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Direct PATH's surveillance and outbreak response work in the Democratic Republic of the Congo, where STRIDES is among the largest US Government mechanisms supporting the Bundibugyo virus disease response. Initiated and built the organisational basis for PATH's first ever deployment of staff into an active outbreak, putting the safety and security, legal, medical and logistical frameworks in place and securing Executive Leadership Team approval. Four staff and several consultants are now embedded in the national response in Bunia, Ituri.",
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Briefed PATH's Executive Leadership Team and Board on the Bundibugyo virus disease outbreak; contribute to business development and long-term departmental planning across global and country programmes.",
+
+  "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-Aug 25", "Developed mathematical models for the Jameel Institute's Realtime Intelligent Support for Emergencies initiative, assessing vaccine-preventable outbreak risk in conflict settings.",
+  
+  "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-Aug 25", "Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontières, and was invited to present results at a symposium at the 2025 American Society for Tropical Medicine and Hygiene annual meeting.",
+  
+  "Senior Service Fellow", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25", "Designed and carried out surveillance system evaluations for rabies, tuberculosis and long COVID prevalence, using alternative data systems to strengthen health security for Washington State's 8 million residents.",
+  
+  "Senior Service Fellow", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25", "Provided technical assistance to US states and territories using CDC forecasting and data tools; coordinated collaboration with public health agencies in Canada and the European Union.",
+  
+  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Led and supervised outbreak investigations, including *Corynebacterium diphtheriae*, invasive Group A *Streptococcus* and gastrointestinal illness, affecting hundreds of people among vulnerable and hard-to-reach populations.",
+  
+  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Designed standard operating procedures and operational frameworks for disease surveillance, integrated with state and federal health policy and systems.",
+  
+  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Worked with CDC, state and local public health, and international partners to strengthen surveillance for priority diseases.",
+  
+  "Consultant and Course Designer", "AppliedEpi", "Remote", "Jan 22-now", "Created and taught advanced training modules in data management and analytics for outbreak response, used by WHO, CDC and ministries of health; authored chapters on data analysis and epidemiology for field manuals used by public health practitioners.",
+  
+  "Postdoctoral Researcher", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Directed epidemiological modelling for malaria, COVID-19 and yellow fever, informing policy recommendations for ministries of health in Brazil, Nigeria and Ethiopia and for WHO, CDC and USAID.",
+  
+  "Postdoctoral Researcher", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Designed and implemented models predicting yellow fever spillover and the potential impact of invasive malaria vectors, published in Nature Communications and BMC Medicine.",
+  
+  "Postdoctoral Researcher", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Led development of tools for integrated vector control strategies against malaria in sub-Saharan Africa.",
+  
+  "Epidemiologist (COVID-19 Response)", "World Health Organization", "Remote", "Jan 20-Apr 20", "Provided analytical support for IHR-aligned surveillance during the COVID-19 pandemic in low- and middle-income countries.",
+  
+  "Epidemiologist (Yellow Fever Response)", "World Health Organization", "Geneva, Switzerland", "Jan 15-Sep 15", "Produced rapid epidemiological analysis and operational guidelines for outbreak response, focusing on epidemiological drivers and transmission potential in Angola and the Democratic Republic of the Congo."
+ 
+) %>% 
+  detailed_entries(company, loc, role, dates, details, .protect = F)
+```
+
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates,
+  "PhD in Infectious Disease Epidemiology", "Imperial College London", "London, United Kingdom", "Jan 17-Jan 20",
+  "MSc in Epidemiology", "Imperial College London", "London, United Kingdom", "Oct 14-Oct 15",
+  "BSc in Biology with Psychology", "Queen Mary University of London", "London, United Kingdom", "Sep 11-May 14"
+) %>% 
+  detailed_entries(uni, loc, degree, dates)
+```
+
+```{r publications_load, echo = FALSE, message = FALSE, warning = FALSE, results = FALSE}
+pubs <- scholar::get_publications("xk9BhHUAAAAJ")%>%
+  dplyr::mutate(author = author %>%
+                  as.character,
+                journal = journal %>%
+                  replace(journal %in% "bioRxiv", "BioRxiv") %>%
+                  replace(journal %in% "medRxiv", "MedRxiv"),
+                first_author = case_when(stringr::str_starts(author, "A Hamlet|ATP Hamlet") ~ TRUE,
+                                         TRUE ~ FALSE),
+                preprint = case_when(journal %in% c("bioRxiv", "BioRxiv", "MedRxiv", "medRxiv", "") ~ TRUE,
+                                     TRUE ~ FALSE),
+                report = case_when(stringr::str_starts(title, "Report") ~ TRUE,
+                                   TRUE ~ FALSE)) %>%
+  dplyr::arrange(desc(year), desc(cites))
+
+pubs <- pubs %>%
+  rowwise() %>%
+  mutate(
+    author = case_when(
+      str_ends(author, "\\.\\.\\.") ~ get_complete_authors(id = "xk9BhHUAAAAJ", pubid = pubid),
+      TRUE ~ author
+    )
+  ) %>%
+  ungroup()
+
+if(any(duplicated(pubs$title))) pubs <- pubs[-which(duplicated(pubs$title)), ]
+pubs <- pubs[!is.na(pubs$year), ]
+
+#Fix journal names
+pubs <- pubs %>%
+  mutate(
+    journal = str_to_title(journal),
+    journal = gsub("Plos", "PLoS", journal),
+    journal = gsub("Bmc", "BMC", journal),
+    journal = case_when(
+    journal == "Bmj" ~ "BMJ",
+    TRUE ~ journal
+  )) %>%
+  filter(!grepl("vol 6, pg e100|Imperial College", title))
+
+# Escape LaTeX special characters before printing with .protect = FALSE
+latex_escape <- function(x) gsub("([&%$#_{}])", "\\\\\\1", x)
+pubs <- pubs %>%
+  mutate(across(c(title, journal, author), latex_escape))
+
+# Bold own name AFTER escaping, so the macro is not itself escaped
+pubs$author <- gsub("A Hamlet|ATP Hamlet", "\\\\textcolor{red}{\\\\textbf{A Hamlet}} ", pubs$author)
+
+name_in_first_couple <- pubs[which(pubs$first_author == F & grepl("Hamlet", pubs$author)), ]
+name_in_first_couple_papers <- name_in_first_couple[which(name_in_first_couple$report == F & name_in_first_couple$preprint == F), ]
+
+first_author_number <- pubs %>% dplyr::filter(first_author == T & preprint == F) %>% nrow()
+other_author_number <- name_in_first_couple_papers %>% nrow()
+
+# Selected publications: first-author peer-reviewed papers, most recent first
+selected_pubs <- pubs %>%
+  dplyr::filter(first_author == TRUE, preprint == FALSE, report == FALSE) %>%
+  head(6)
+```
+
+# Select accomplishments
+
+* **Outbreak deployment**: initiated and secured executive approval for PATH's first deployment of staff into an active outbreak response (Bundibugyo virus disease, Ituri, DRC, 2026), including the safety, security, legal, medical and logistical frameworks required for the organisation to act.
+* **Surveillance frameworks**: contributed to global guidelines and standard operating procedures for yellow fever surveillance under the One Health framework.
+* **Outbreak response**: led a cross-sector team of 15 experts in the investigation and control of *Corynebacterium diphtheriae* and gastrointestinal illness in vulnerable populations.
+* **Capacity building**: designed, managed and delivered virtual and in-person training in outbreak response and data analysis for policy across low- and middle-income countries, reaching several hundred participants.
+
+<!-- Funding: add a section here once you have funder names, amounts and dates.
+     Grants won is a standard section on an academic-facing CV and its absence is
+     more noticeable than a short list would be. -->
+
+# Publications and presentations
+
+`r first_author_number` first-author and `r other_author_number` co-authored peer-reviewed publications, on zoonotic disease surveillance, infectious disease dynamics and health security. Results of outbreak investigations, scientific analysis and data analytical approaches presented at over a dozen international conferences, meetings and workshops.
+
+Selected first-author publications:
+
+```{r publications_selected}
+selected_pubs %>%
+  detailed_entries(
+    what = title,
+    when = year,
+    with = journal,
+    why = author,
+    .protect = FALSE
+  )
+```
+
+Full list: [<span style="color: red">**Google Scholar profile**</span>](https://scholar.google.co.uk/citations?user=xk9BhHUAAAAJ&hl=en).

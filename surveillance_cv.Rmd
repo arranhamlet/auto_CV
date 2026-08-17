@@ -23,7 +23,7 @@ library(scholar)
 
 # Summary of expertise
 
-Infectious disease epidemiologist with 9+ years of experience in integrated disease surveillance, outbreak response, public health policy and research project management. Extensive global expertise in zoonotic diseases, One Health, and statistical/mathematical modelling to inform strategic interventions. Proven leadership in managing multi-sectoral teams and aligning programs with global frameworks. Adept at developing sustainable, localized solutions for epidemic and pandemic-prone diseases.
+Infectious disease epidemiologist with 10+ years of experience in integrated disease surveillance, outbreak response, public health policy and research project management. Extensive global expertise in zoonotic diseases, One Health, and statistical/mathematical modelling to inform strategic interventions. Proven leadership in managing multi-sectoral teams and aligning programs with global frameworks. Adept at developing sustainable, localized solutions for epidemic and pandemic-prone diseases.
 
 # Key Competencies
 
@@ -44,9 +44,13 @@ Infectious disease epidemiologist with 9+ years of experience in integrated dise
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Infectious Disease Surveillance Lead for PATH's Epidemic Preparedness and Response Initiative, and project lead for the USG-funded Strengthening Infectious Disease Detection Systems (STRIDES) project, one of the largest infectious disease surveillance programmes currently operating globally.",
+  
+    "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "PATH leads the technical area for infectious disease surveillance across STRIDES, spanning 36 countries. In this role I oversee the full technical implementation of that work: designing surveillance systems, providing technical oversight, engaging with government and partner stakeholders, and building the team delivering it on the ground.",
 
-  "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Developing mathematical models for the Jameel Institute’s Realtime Intelligent Support for Emergencies initiative to assess vaccine-preventable outbreak risks in conflict settings.",
-   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-present", "Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontière. The project delivers critical data to help humanitarian organisations and policymakers prioritize aid in crisis settings.",
+  "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-Aug 25", "Developing mathematical models for the Jameel Institute’s Realtime Intelligent Support for Emergencies initiative to assess vaccine-preventable outbreak risks in conflict settings.",
+   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-Aug 25", "Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontière, and invited to present results at a symposium at the 2025 Annual American Society for Tropical Medicine and Hygiene conference. The project delivers critical data to help humanitarian organisations and policymakers prioritize aid in crisis settings.",
   
   "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Provided technical assistance to US states and territories using CDC forecasting and data tools; coordinated collaborations with public health agencies in Canada and the European Union.",
  "Senior Service Fellow and Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25 and Jul 22-Jun 24", "Designed and carried out surveillance system evaluations for rabies, tuberculosis and long COVID prevalence. Emphasized innovative methods and alternative data systems to improve health security for Washington State's 8 million residents.",
@@ -193,7 +197,7 @@ other_author_number <- name_in_first_couple_papers %>% nrow()
 
 * Surveillance Frameworks: Contributed to designing global guidelines and SOPs for yellow fever surveillance under the One Health framework.
 * Outbreak Response: Led a cross-sector team of 15 experts in the investigation and control of *Corynebacterium diphtheriae*, gastrointestinal illness in vulnerable populations.
-* Capacity Building: Recieving funding, designed, managed and delivered virtual and in-person training for outbreak response and data analysis for policy in LMICs to hundreds of participants.
+* Capacity Building: Awarded funding; designed, managed, and delivered virtual and in-person training for outbreak response and data analysis for policy in LMICs to hundreds of participants.
 
 # Presentations and publications
 Presented results of outbreak investigations, scientific analysis and data analytical approaches at over a dozen international conferences, meetings and workshops. 
