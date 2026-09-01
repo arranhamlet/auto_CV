@@ -1,0 +1,263 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Dr Arran Hamlet}{}
+
+\position{Infectious Disease Surveillance Lead}
+\address{PATH}
+
+\email{\href{mailto:arranh92@gmail.com}{\nolinkurl{arranh92@gmail.com}}}
+\github{arranhamlet}
+\linkedin{arranhamlet}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage {hyperref}
+\hypersetup {colorlinks = true, linkcolor = blue, urlcolor = red}
+
+% Pandoc CSL macros
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {September 2026}
+    {Dr Arran Hamlet~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\section{Summary of expertise}\label{summary-of-expertise}
+
+Infectious disease epidemiologist with over ten years in integrated
+disease surveillance, outbreak response and field epidemiology.
+Currently accountable for PATH's delivery of infectious disease
+surveillance under STRIDES, a US Department of State-funded programme
+operating in 36 countries with an annual operating budget of
+approximately US\$19 million and some 40 full-time staff. Doctoral
+training in mathematical and statistical modelling, applied across
+IHR-aligned surveillance systems, and in outbreak response including
+filo- and arboviruses.
+
+\section{Key competencies}\label{key-competencies}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Health security and biosecurity}: IHR-aligned surveillance,
+  detection and notification thresholds, and expert on the technical
+  aspects of implementing and maintaining surveillance systems.
+\item
+  \textbf{Programme leadership}: Full technical, financial and
+  operational accountability for a 36-country detection programme; seven
+  global and regional leads reporting directly; multidisciplinary teams
+  built and supervised across 18 countries.
+\item
+  \textbf{Outbreak response}: Led investigations and response operations
+  spanning filovirus disease, diphtheria, invasive Group A
+  \emph{Streptococcus}, gastrointestinal illness, yellow fever and
+  COVID-19.
+\item
+  \textbf{Modelling and analytics}: Statistical and mathematical models
+  for outbreak risk, spillover prediction and surveillance system
+  evaluation, used to inform ministry and agency decisions.
+\item
+  \textbf{Partnerships and advocacy}: WHO, US CDC, ministries of health,
+  US Government donors and academic partners; briefings delivered at
+  executive and board level.
+\item
+  \textbf{One Health}: Addressing human, animal and environmental health
+  intersections in surveillance design and zoonotic risk assessment.
+\end{itemize}
+
+\section{Professional experience}\label{professional-experience}
+
+\begin{cventries}
+    \cventry{PATH}{Infectious Disease Surveillance Lead}{Sep 25-now}{London, United Kingdom}{\begin{cvitems}
+\item Infectious Disease Surveillance Lead for PATH's Epidemic Preparedness and Response initiative, and project lead for PATH's work on STRIDES (Strengthening Infectious Disease Detection Systems): a US Department of State-funded programme led by FHI 360, operating in 36 countries across six regions, in which PATH holds the lead for infectious disease surveillance and health information systems.
+\item Hold overall accountability for PATH's technical, financial and operational delivery, against an annual operating budget of approximately US\$19 million. Seven global and regional leads report to me directly, above a structure of some 40 full-time PATH staff.
+\item PATH's first full-time hire on the programme, carrying it from design into implementation: setting the surveillance strategy, building government and partner relationships, writing the workplans and recruiting the team while delivering against country commitments.
+\item Direct PATH's surveillance and outbreak response work in the Democratic Republic of the Congo, where STRIDES is among the largest US Government mechanisms supporting the Bundibugyo virus disease response. Initiated and built the organisational basis for PATH's first ever deployment of staff into an active outbreak, putting the safety and security, legal, medical and logistical frameworks in place and securing Executive Leadership Team approval. Four staff and several consultants are now embedded in the national response in eastern DRC.
+\item Briefed PATH's Executive Leadership Team and Board on the Bundibugyo virus disease outbreak; contribute to business development and long-term departmental planning across global and country programmes.
+\end{cvitems}}
+    \cventry{Imperial College London}{Research Fellow}{Mar 25-Aug 25}{London, United Kingdom}{\begin{cvitems}
+\item Developed mathematical models for the Jameel Institute's Realtime Intelligent Support for Emergencies initiative, assessing vaccine-preventable outbreak risk in conflict settings.
+\item Presented work in progress to researchers and policy makers at the WHO Global Hub for Pandemic and Epidemic Intelligence and Médecins Sans Frontières, and was invited to present results at a symposium at the 2025 American Society for Tropical Medicine and Hygiene annual meeting.
+\end{cvitems}}
+    \cventry{Centers for Disease Control and Prevention}{Senior Service Fellow}{Jul 24-Feb 25}{Seattle, WA}{\begin{cvitems}
+\item Designed and carried out surveillance system evaluations for rabies, tuberculosis and long COVID prevalence, using alternative data systems to strengthen health security for Washington State's 8 million residents.
+\item Provided technical assistance to US states and territories using CDC forecasting and data tools; coordinated collaboration with public health agencies in Canada and the European Union.
+\end{cvitems}}
+    \cventry{Centers for Disease Control and Prevention}{Epidemic Intelligence Service Officer}{Jul 22-Jun 24}{Seattle, WA}{\begin{cvitems}
+\item Led and supervised outbreak investigations, including *Corynebacterium diphtheriae*, invasive Group A *Streptococcus* and gastrointestinal illness, affecting hundreds of people among vulnerable and hard-to-reach populations.
+\item Designed standard operating procedures and operational frameworks for disease surveillance, integrated with state and federal health policy and systems.
+\item Worked with CDC, state and local public health, and international partners to strengthen surveillance for priority diseases.
+\end{cvitems}}
+    \cventry{AppliedEpi}{Consultant and Course Designer}{Jan 22-now}{Remote}{\begin{cvitems}
+\item Created and taught advanced training modules in data management and analytics for outbreak response, used by WHO, CDC and ministries of health; authored chapters on data analysis and epidemiology for field manuals used by public health practitioners.
+\end{cvitems}}
+    \cventry{Imperial College London}{Postdoctoral Researcher}{Jan 20-Jun 22}{London, United Kingdom}{\begin{cvitems}
+\item Directed epidemiological modelling for malaria, COVID-19 and yellow fever, informing policy recommendations for ministries of health in Brazil, Nigeria and Ethiopia and for WHO, CDC and USAID.
+\item Designed and implemented models predicting yellow fever spillover and the potential impact of invasive malaria vectors, published in Nature Communications and BMC Medicine.
+\item Led development of tools for integrated vector control strategies against malaria in sub-Saharan Africa.
+\end{cvitems}}
+    \cventry{World Health Organization}{Epidemiologist (COVID-19 Response)}{Jan 20-Apr 20}{Remote}{\begin{cvitems}
+\item Provided analytical support for IHR-aligned surveillance during the COVID-19 pandemic in low- and middle-income countries.
+\end{cvitems}}
+    \cventry{World Health Organization}{Epidemiologist (Yellow Fever Response)}{Jan 15-Sep 15}{Geneva, Switzerland}{\begin{cvitems}
+\item Produced rapid epidemiological analysis and operational guidelines for outbreak response, focusing on epidemiological drivers and transmission potential in Angola and the Democratic Republic of the Congo.
+\end{cvitems}}
+\end{cventries}
+
+\section{Education}\label{education}
+
+\begin{cventries}
+    \cventry{Imperial College London}{PhD in Infectious Disease Epidemiology}{Jan 17-Jan 20}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Imperial College London}{MSc in Epidemiology}{Oct 14-Oct 15}{London, United Kingdom}{}\vspace{-4.0mm}
+    \cventry{Queen Mary University of London}{BSc in Biology with Psychology}{Sep 11-May 14}{London, United Kingdom}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Select accomplishments}\label{select-accomplishments}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Outbreak deployment}: Initiated and secured executive approval
+  for PATH's first deployment of staff into an active outbreak response
+  (Bundibugyo virus disease, eastern DRC, 2026), including the safety,
+  security, legal, medical and logistical frameworks required for the
+  organisation to act.
+\item
+  \textbf{Surveillance frameworks}: Contributed to global guidelines and
+  standard operating procedures for yellow fever surveillance under the
+  One Health framework.
+\item
+  \textbf{Outbreak response}: Led a cross-sector team of 15 experts in
+  the investigation and control of \emph{Corynebacterium diphtheriae}
+  and gastrointestinal illness in vulnerable populations.
+\item
+  \textbf{Capacity building}: Designed, managed and delivered virtual
+  and in-person training in outbreak response and data analysis for
+  policy across low- and middle-income countries, reaching several
+  hundred participants.
+\end{itemize}
+
+\section{Publications and
+presentations}\label{publications-and-presentations}
+
+8 first-author and 45 co-authored peer-reviewed publications, on
+zoonotic disease surveillance, infectious disease dynamics and health
+security. Results of outbreak investigations, scientific analysis and
+data analytical approaches presented at over a dozen international
+conferences, meetings and workshops.
+
+Selected first-author publications:
+
+\begin{cventries}
+    \cventry{Estimating the Burden and Distribution of Post–COVID-19 Condition in Washington State, March 2020–October 2023}{Preventing Chronic Disease}{}{2024}{\begin{cvitems}
+\item \textcolor{red}{\textbf{A Hamlet}} , D Hoffman, S Saydah, I Painter
+\end{cvitems}}
+    \cventry{Notes from the Field: Gastrointestinal Illness Among Hikers on the Pacific Crest Trail—Washington, August–October 2022}{Mmwr. Morbidity And Mortality Weekly Report}{}{2023}{\begin{cvitems}
+\item \textcolor{red}{\textbf{A Hamlet}} , K Begley, S Miko, L Stewart, W Tellier, JG-D Leon, H Booth, S Lippman, A Kahler, A Roundtree, A Hatada, S Lindquist, B Melius, M Goldoft, M Mattioli, M Holshue
+\end{cvitems}}
+    \cventry{The potential impact of Anopheles stephensi establishment on the transmission of Plasmodium falciparum in Ethiopia and prospective control measures}{BMC Medicine}{}{2022}{\begin{cvitems}
+\item \textcolor{red}{\textbf{A Hamlet}} , D Dengela, JE Tongren, FG Tadesse, T Bousema, M Sinka, A Seyoum, SR Irish, JS Armistead, T Churcher
+\end{cvitems}}
+    \cventry{Seasonal and inter-annual drivers of yellow fever transmission in South America}{PLoS Neglected Tropical Diseases}{}{2021}{\begin{cvitems}
+\item \textcolor{red}{\textbf{A Hamlet}} , KAM Gaythorpe, T Garske, NM Ferguson
+\end{cvitems}}
+    \cventry{Seasonality of agricultural exposure as an important predictor of seasonal yellow fever spillover in Brazil}{Nature Communications}{}{2021}{\begin{cvitems}
+\item \textcolor{red}{\textbf{A Hamlet}} , DG Ramos, KAM Gaythorpe, APM Romano, T Garske, NM Ferguson
+\end{cvitems}}
+    \cventry{Yellow fever in South America: The role of environment and host on transmission dynamics}{Imperial College London}{}{2020}{\begin{cvitems}
+\item \textcolor{red}{\textbf{A Hamlet}} 
+\end{cvitems}}
+\end{cventries}
+
+Full list:
+\href{https://scholar.google.co.uk/citations?user=xk9BhHUAAAAJ&hl=en}{{\textbf{Google
+Scholar profile}}}.
+
+
+
+\end{document}
