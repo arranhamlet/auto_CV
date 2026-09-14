@@ -23,29 +23,31 @@ library(scholar)
 
 # Summary of expertise
 
-Infectious disease epidemiologist with over ten years in integrated disease surveillance, outbreak detection and field epidemiology. Accountable for PATH's delivery of infectious disease surveillance under STRIDES, a US Department of State-funded programme operating in 36 countries; PATH's share runs to approximately US\$19 million a year and some 40 full-time staff. Doctoral training in mathematical and statistical modelling, applied to IHR-aligned surveillance systems and to outbreak response including filoviruses and arboviruses.
+Infectious disease epidemiologist with over ten years in integrated disease surveillance, outbreak response and health security policy. Currently accountable for PATH's delivery of infectious disease surveillance under STRIDES, a US Department of State-funded programme operating in 36 countries with an annual operating budget of approximately US\$19 million and some 40 full-time staff. Doctoral training in mathematical and statistical modelling, applied across IHR-aligned surveillance systems, filovirus and arbovirus outbreak response, and the financing and policy environment that determines whether detection capacity endures.
 
 # Key competencies
 
-* **Programme leadership at scale**: Full technical, financial and operational accountability for a 36-country detection programme; seven global and regional leads reporting directly; multidisciplinary teams built and supervised across 18 countries.
-* **Health security and biosecurity**: IHR-aligned surveillance and notification, outbreak detection thresholds, and the technical implementation and maintenance of national surveillance systems.
-* **Outbreak response**: Investigation and response operations spanning filovirus disease, diphtheria, invasive Group A *Streptococcus*, gastrointestinal illness, yellow fever and COVID-19.
+* **Health security and biosecurity**: IHR-aligned surveillance, detection and notification thresholds, event-based and genomic surveillance, and the policy and financing architecture that sustains them.
+* **Programme leadership**: full technical, financial and operational accountability for a 36-country detection programme; seven global and regional leads reporting directly; multidisciplinary teams built and supervised across six regions.
+* **Outbreak response**: led investigations and response operations spanning filovirus disease, diphtheria, invasive Group A *Streptococcus*, gastrointestinal illness, yellow fever and COVID-19.
+* **Modelling and analytics**: statistical and mathematical models for outbreak risk, spillover prediction and surveillance system evaluation, used to inform ministry and agency decisions.
 * **Partnerships and advocacy**: WHO, US CDC, ministries of health, US Government donors and academic partners; briefings delivered at executive and board level.
-* **Modelling and analytics**: Statistical and mathematical models for outbreak risk, spillover prediction and surveillance system evaluation, used to inform ministry and agency decisions.
-* **One Health**: Human, animal and environmental health intersections in surveillance design and zoonotic risk assessment.
+* **One Health**: addressing human, animal and environmental health intersections in surveillance design and zoonotic risk assessment.
 
 # Professional experience
 ```{r employment}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   
-  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Project lead for PATH's work on STRIDES (Strengthening Infectious Disease Detection Systems), a US Department of State-funded programme led by FHI 360 across 36 countries and six regions, in which PATH holds the lead for infectious disease surveillance and health information systems.",
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Infectious Disease Surveillance Lead for PATH's Epidemic Preparedness and Response initiative, and project lead for PATH's work on STRIDES (Strengthening Infectious Disease Detection Systems): a US Department of State-funded programme led by FHI 360, operating in 36 countries across six regions, in which PATH holds the lead for infectious disease surveillance and health information systems.",
   
-  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Hold overall accountability for PATH's technical, financial and operational delivery, against an annual operating budget of approximately US\\$19 million. Seven global and regional leads report to me directly, above some 40 full-time PATH staff.",
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Hold overall accountability for PATH's technical, financial and operational delivery, against an annual operating budget of approximately US\\$19 million. Seven global and regional leads report to me directly, above a structure of some 40 full-time PATH staff.",
   
-  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Was PATH's first full-time hire on the programme and carried it from design into implementation: set the surveillance strategy, built the government and partner relationships, wrote the workplans and recruited the team while delivering against country commitments.",
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "PATH's first full-time hire on the programme, carrying it from design into implementation: setting the surveillance strategy, building government and partner relationships, writing the workplans and recruiting the team while delivering against country commitments.",
   
-  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Direct PATH's surveillance and outbreak response work in the Democratic Republic of the Congo, where STRIDES is among the largest US Government mechanisms supporting the Bundibugyo virus disease response. Initiated PATH's first deployment of staff into an active outbreak: put the safety and security, legal, medical and logistical frameworks in place and secured Executive Leadership Team approval. Four staff and several consultants are now embedded in the national response in eastern DRC. Briefed the Executive Leadership Team and Board on the outbreak.",
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Direct PATH's surveillance and outbreak response work in the Democratic Republic of the Congo, where STRIDES is among the largest US Government mechanisms supporting the Bundibugyo virus disease response. Initiated and built the organisational basis for PATH's first ever deployment of staff into an active outbreak, putting the safety and security, legal, medical and logistical frameworks in place and securing Executive Leadership Team approval. Four staff and several consultants are now embedded in the national response in Bunia, Ituri.",
+  
+  "Infectious Disease Surveillance Lead", "PATH", "London, United Kingdom", "Sep 25-now", "Briefed PATH's Executive Leadership Team and Board on the Bundibugyo virus disease outbreak; contribute to business development and long-term departmental planning across global and country programmes.",
 
   "Research Fellow", "Imperial College London", "London, United Kingdom", "Mar 25-Aug 25", "Developed mathematical models for the Jameel Institute's Realtime Intelligent Support for Emergencies initiative, assessing vaccine-preventable outbreak risk in conflict settings.",
   
@@ -55,13 +57,13 @@ tribble(
   
   "Senior Service Fellow", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 24-Feb 25", "Provided technical assistance to US states and territories using CDC forecasting and data tools; coordinated collaboration with public health agencies in Canada and the European Union.",
   
-  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Led and supervised outbreak investigations, including *Corynebacterium diphtheriae*, invasive Group A *Streptococcus* and gastrointestinal illness, affecting hundreds of people among vulnerable and hard-to-reach populations. Directed a cross-sector team of 15 on the diphtheria investigation and control response.",
+  "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Led and supervised outbreak investigations, including *Corynebacterium diphtheriae*, invasive Group A *Streptococcus* and gastrointestinal illness, affecting hundreds of people among vulnerable and hard-to-reach populations.",
   
   "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Designed standard operating procedures and operational frameworks for disease surveillance, integrated with state and federal health policy and systems.",
   
   "Epidemic Intelligence Service Officer", "Centers for Disease Control and Prevention", "Seattle, WA", "Jul 22-Jun 24", "Worked with CDC, state and local public health, and international partners to strengthen surveillance for priority diseases.",
   
-  "Consultant and Course Designer", "AppliedEpi", "Remote", "Jan 22-now", "Design and deliver advanced training modules in data management and analytics for outbreak response, used by WHO, CDC and ministries of health. Authored chapters on data analysis and epidemiology for field manuals used by public health practitioners.",
+  "Consultant and Course Designer", "AppliedEpi", "Remote", "Jan 22-now", "Created and taught advanced training modules in data management and analytics for outbreak response, used by WHO, CDC and ministries of health; authored chapters on data analysis and epidemiology for field manuals used by public health practitioners.",
   
   "Postdoctoral Researcher", "Imperial College London", "London, United Kingdom", "Jan 20-Jun 22", "Directed epidemiological modelling for malaria, COVID-19 and yellow fever, informing policy recommendations for ministries of health in Brazil, Nigeria and Ethiopia and for WHO, CDC and USAID.",
   
@@ -151,8 +153,14 @@ selected_pubs <- pubs %>%
 
 # Select accomplishments
 
-* **Surveillance frameworks**: Contributed to global guidelines and standard operating procedures for yellow fever surveillance under the One Health framework.
-* **Capacity building**: Designed, managed and delivered virtual and in-person training in outbreak response and data analysis for policy across low- and middle-income countries, reaching several hundred participants.
+* **Outbreak deployment**: initiated and secured executive approval for PATH's first deployment of staff into an active outbreak response (Bundibugyo virus disease, Ituri, DRC, 2026), including the safety, security, legal, medical and logistical frameworks required for the organisation to act.
+* **Surveillance frameworks**: contributed to global guidelines and standard operating procedures for yellow fever surveillance under the One Health framework.
+* **Outbreak response**: led a cross-sector team of 15 experts in the investigation and control of *Corynebacterium diphtheriae* and gastrointestinal illness in vulnerable populations.
+* **Capacity building**: designed, managed and delivered virtual and in-person training in outbreak response and data analysis for policy across low- and middle-income countries, reaching several hundred participants.
+
+<!-- Funding: add a section here once you have funder names, amounts and dates.
+     Grants won is a standard section on an academic-facing CV and its absence is
+     more noticeable than a short list would be. -->
 
 # Publications and presentations
 
